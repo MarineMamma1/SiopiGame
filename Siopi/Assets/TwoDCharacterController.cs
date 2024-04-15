@@ -8,6 +8,7 @@ public class TwoDCharacterController : MonoBehaviour
     public FootstepManager footstepManager;
     private bool isMoving;
     private bool isRunning = false;
+    public Transform ModelTransform;
 
     public float speed = 5.0f; // Speed of character movement
     public float jumpForce = 10.0f; // Force of the jump
@@ -33,6 +34,7 @@ public class TwoDCharacterController : MonoBehaviour
         {
             isMoving = false;
         }
+        RotateChildObject();
 
         // Implement glide mechanic, only if falling (y velocity < 0)
         if (isGliding && rb.velocity.y < 0 && !isGrounded)
@@ -52,7 +54,19 @@ public class TwoDCharacterController : MonoBehaviour
 
     }
 
-
+    void RotateChildObject()
+    {
+        if (rb.velocity.x > 0.1f) // Moving right
+        {
+            // Set the child object rotation to face right
+            ModelTransform.localEulerAngles = new Vector3(0, 0, 0);
+        }
+        else if (rb.velocity.x < -0.1f) // Moving left
+        {
+            // Set the child object rotation to face left
+            ModelTransform.localEulerAngles = new Vector3(0, 180, 0);
+        }
+    }
 
     public void OnJump(InputAction.CallbackContext context)
     {

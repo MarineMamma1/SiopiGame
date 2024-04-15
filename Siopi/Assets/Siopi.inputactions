@@ -42,7 +42,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "StartHum",
+                    "name": "Hum",
                     "type": "Button",
                     "id": "3e6d7ea3-c1df-4587-b1b6-dbcfdd2ec454",
                     "expectedControlType": "Button",
@@ -190,7 +190,7 @@
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Gamepad",
+                    "groups": "Gamepad;Joystick",
                     "action": "HumSelection",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -201,7 +201,7 @@
                     "path": "<Pointer>/delta",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard&Mouse;Touch",
+                    "groups": "Keyboard&Mouse",
                     "action": "HumSelection",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -212,7 +212,7 @@
                     "path": "<Joystick>/{Hatswitch}",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Joystick",
+                    "groups": "Joystick;Keyboard&Mouse;Gamepad",
                     "action": "HumSelection",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -287,10 +287,10 @@
                     "name": "",
                     "id": "a6a237cc-dc55-41d5-823d-91de11375778",
                     "path": "<Keyboard>/h",
-                    "interactions": "",
+                    "interactions": "Hold",
                     "processors": "",
-                    "groups": "",
-                    "action": "StartHum",
+                    "groups": "Keyboard&Mouse;Gamepad;Joystick",
+                    "action": "Hum",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
