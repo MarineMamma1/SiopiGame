@@ -5,13 +5,23 @@ using UnityEngine;
 public class PlayerStateController : MonoBehaviour
 {
     private GameManager gamemanager;
+    public GameObject GameManagerScript;
     public int MaxHealth = 100;
     public int CurrentHealth;
 
    private void Start()
     {
-        
+        gamemanager = GameManagerScript.GetComponent<GameManager>();
         CurrentHealth = MaxHealth;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            int damageAmount = 10;
+            TakeDamage(damageAmount);
+        }
     }
 
     public void TakeDamage(int damageAmount)
@@ -27,7 +37,6 @@ public class PlayerStateController : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Player has died.");
-
+    gamemanager.EndGame();
     }
 }

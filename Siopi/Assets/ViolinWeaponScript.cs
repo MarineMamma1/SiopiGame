@@ -5,8 +5,10 @@ using UnityEngine;
 public class ViolinWeaponScript : MonoBehaviour
 {
     public GameObject projectilePrefab;
-
+    public float fireCooldown = 0.5f;
     public float projectileSpeed = 10f;
+
+    private float lastFireTime = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,26 +23,33 @@ public class ViolinWeaponScript : MonoBehaviour
 
     private void FireProjectile()
     {
-        if(projectilePrefab != null)
+        // Check if the cooldown has elapsed since the last shot
+        if (Time.time > lastFireTime + fireCooldown)
         {
-            GameObject projectile = Instantiate(projectilePrefab, transform.position, transform.rotation);
-            // Assuming the projectile has a Rigidbody component to apply velocity
-            Rigidbody rb = projectile.GetComponent<Rigidbody>();
-            if (rb != null)
+            if (projectilePrefab != null)
             {
-                // Set the velocity of the projectile
-                rb.velocity = transform.forward * projectileSpeed;
+                GameObject projectile = Instantiate(projectilePrefab, transform.position, transform.rotation);
+                Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
+                if (rb != null)
+                {
+                    rb.velocity = transform.right * projectileSpeed; // Use right for 2D space direction
+                    lastFireTime = Time.time; // Update the last fire time after a successful shot
+                }
+                else
+                {
+                    Debug.LogError("Projectile prefab needs a Rigidbody2D component.");
+                }
             }
             else
             {
-                Debug.LogError("Projectile prefab needs a Rigidbody component.");
+                Debug.LogError("Projectile prefab is not assigned.");
             }
         }
-        else
-        {
-            Debug.LogError("Projectile prefab is not assigned.");
-        }
+    }
 
+    public void OnFire()
+    {
+        FireProjectile();
     }
     
 }

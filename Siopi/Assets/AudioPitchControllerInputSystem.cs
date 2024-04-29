@@ -10,12 +10,15 @@ public class AudioPitchControllerInputSystem : MonoBehaviour
     public float minPitch = 0.5f; // Minimum pitch
     public float pitchSmoothing = 0.05f; // Smoothing speed
 
+ 
     private bool isHumming;
-    private Vector3 humDir;
+    private Vector2 humDir;
     public float targetPitch; // Target pitch based on input
+    public float pitchValue;
 
     void Start()
     {
+   
         isHumming = false;
         targetPitch = audioSource.pitch; // Initialize with the AudioSource's initial pitch
     }
@@ -47,7 +50,10 @@ public class AudioPitchControllerInputSystem : MonoBehaviour
         if (context.performed && isHumming)
         {
             humDir = context.ReadValue<Vector2>();
-            AdjustPitch(humDir);
+            if (humDir != Vector2.zero ) // Validate the input is not zero
+            {
+                AdjustPitch(humDir);
+            }
         }
     }
 
@@ -72,8 +78,14 @@ public class AudioPitchControllerInputSystem : MonoBehaviour
     {
         if (isHumming)
         {
-            // Smoothly transition to the target pitch
-            audioSource.pitch = Mathf.Lerp(audioSource.pitch, targetPitch, pitchSmoothing * Time.deltaTime);
+            // Smoothly transition to the target pitch only if the difference is significant
+            if (Mathf.Abs(audioSource.pitch - targetPitch) > 0.01f)
+            {
+               
+                audioSource.pitch = Mathf.Lerp(audioSource.pitch, targetPitch, pitchSmoothing * Time.deltaTime);
+                pitchValue = audioSource.pitch;
+
+            }
         }
     }
 }
