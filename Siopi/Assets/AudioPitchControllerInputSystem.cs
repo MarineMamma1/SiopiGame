@@ -15,12 +15,15 @@ public class AudioPitchControllerInputSystem : MonoBehaviour
     private Vector2 humDir;
     public float targetPitch; // Target pitch based on input
     public float pitchValue;
+    private CircleCollider2D circleCollider2D;
 
     void Start()
     {
-   
+           
         isHumming = false;
         targetPitch = audioSource.pitch; // Initialize with the AudioSource's initial pitch
+        circleCollider2D = GetComponent<CircleCollider2D>();
+
     }
 
     private void StartAudio()
@@ -37,11 +40,14 @@ public class AudioPitchControllerInputSystem : MonoBehaviour
         {
             StartAudio();
             isHumming = true;
+            circleCollider2D.enabled = true;
         }
         else
         {
             StopAudio();
             isHumming = false;
+            circleCollider2D.enabled = false;
+
         }
     }
 
@@ -88,4 +94,38 @@ public class AudioPitchControllerInputSystem : MonoBehaviour
             }
         }
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Platform"))
+        {
+            PlatformMove platformMove = other.GetComponent<PlatformMove>();
+            if (platformMove != null && pitchValue >= 1.1f ) // N#
+            {
+                platformMove.PerformAction();
+            }
+            else
+            {
+                Debug.LogError("error component not found on the object with tag 'platform'");
+            }
+        }
+        else
+        {
+            if(other.gameObject.CompareTag("Door"))
+            {
+                DoorLogic doorLogic = other.GetComponent<DoorLogic>();
+                if (doorLogic != null && pitchValue <= 0.8f) // N#
+                {
+                    doorLogic.ToggleDoor();
+                }
+                else
+                {
+                    Debug.LogError("error component not found on the object with tag 'door'");
+                }
+            }
+        }
+    }
+    
+    
+   
 }
