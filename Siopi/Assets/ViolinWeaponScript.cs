@@ -7,7 +7,10 @@ public class ViolinWeaponScript : MonoBehaviour
     public GameObject projectilePrefab;
     public float fireCooldown = 0.5f;
     public float projectileSpeed = 10f;
+    public float offset;
 
+    private Vector3 testVector3;
+    private Vector3 offSetVector;
     private float lastFireTime = 0;
     // Start is called before the first frame update
     void Start()
@@ -28,7 +31,10 @@ public class ViolinWeaponScript : MonoBehaviour
         {
             if (projectilePrefab != null)
             {
-                GameObject projectile = Instantiate(projectilePrefab, transform.position, transform.rotation);
+                offSetVector = new Vector3(offset, 0, 0);
+                testVector3 = Vector3.Scale(transform.forward, offSetVector);
+
+                GameObject projectile = Instantiate(projectilePrefab, transform.position + testVector3, transform.rotation);
                 Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
                 if (rb != null)
                 {

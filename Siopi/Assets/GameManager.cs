@@ -122,6 +122,11 @@ public class GameManager : MonoBehaviour
         ChangeState(GameState.InGame);
     }
 
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
    
   
 }

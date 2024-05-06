@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class PlayerStateController : MonoBehaviour
 {
-    private GameManager gamemanager;
-    public GameObject GameManagerScript;
     public int MaxHealth = 100;
     public int CurrentHealth;
 
-   private void Start()
+    private void Start()
     {
-        gamemanager = GameManagerScript.GetComponent<GameManager>();
+        // Access the GameManager instance using the Singleton pattern
         CurrentHealth = MaxHealth;
     }
 
@@ -37,6 +35,7 @@ public class PlayerStateController : MonoBehaviour
 
     private void Die()
     {
-    gamemanager.EndGame();
+        // Use GameManager's singleton instance to call EndGame
+        GameManager.Instance.EndGame();
     }
 }

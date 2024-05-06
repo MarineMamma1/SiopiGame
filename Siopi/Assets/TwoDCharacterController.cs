@@ -9,6 +9,7 @@ public class TwoDCharacterController : MonoBehaviour
     private bool isMoving;
     private bool isRunning = false;
     public Transform ModelTransform;
+    public bool isBDoorOpen;
 
     public float speed = 5.0f; // Speed of character movement
     public float jumpForce = 10.0f; // Force of the jump
@@ -19,9 +20,12 @@ public class TwoDCharacterController : MonoBehaviour
     private Transform currentPlatform; // To keep track of the current platform the character is on
     private Vector2 moveInput;
     private bool isGliding = false; // Track if the character is currently gliding
+    public int collectibleCount = 0;
+
 
     void Start()
     {
+        
         footstepManager = GetComponentInChildren<FootstepManager>();
         rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component attached to the character
     }
@@ -103,15 +107,17 @@ public class TwoDCharacterController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Platform")
+        if (collision.gameObject.tag == "Ground")
         {
             isGrounded = true;
             isGliding = false;
-        }
+        } else
         if (collision.gameObject.tag == "Platform")
         {
             isOnPlatform = true;
             currentPlatform = collision.transform;
+            isGrounded = true;
+            isGliding = false;
         }
     }
 
@@ -121,6 +127,15 @@ public class TwoDCharacterController : MonoBehaviour
         {
             isOnPlatform = false;
             currentPlatform = null;
+        }
+    }
+    public void AddCollectible()
+    {
+        collectibleCount++;
+        if(collectibleCount>=4)
+        {
+            isBDoorOpen = true;
+            //openDoor
         }
     }
 }

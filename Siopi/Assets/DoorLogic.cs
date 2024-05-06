@@ -6,17 +6,32 @@ public class DoorLogic : MonoBehaviour
 {
     public float openDuration = 2.0f; // Time door stays open before closing
     private Collider2D doorCollider;
-    private SpriteRenderer doorRenderer;
+   // private material material
     private bool isOpen = false;
+    private Material material;
+    private Renderer renderer;
+    private Color color;
 
     void Start()
     {
         doorCollider = GetComponent<Collider2D>();
-       //FIX doorRenderer = GetComponent<SpriteRenderer>();
+         renderer = GetComponent<Renderer>();
+        if(!renderer)
+        {
+            Debug.Log("doorMbroken");
+        }
+        else
+        {
+             material = renderer.material;
+             color = material.color;
+            
+        }
+        //FIX doorRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void ToggleDoor()
     {
+
         if (!isOpen)
         {
             StartCoroutine(OpenDoor());
@@ -25,6 +40,7 @@ public class DoorLogic : MonoBehaviour
 
     IEnumerator OpenDoor()
     {
+        
         Debug.Log("doorworkingsupposedly");
         isOpen = true;
         
@@ -32,7 +48,9 @@ public class DoorLogic : MonoBehaviour
      //   doorRenderer.color = new Color(doorRenderer.color.r, doorRenderer.color.g, doorRenderer.color.b, 0.5f);
         // Disable the collider
         doorCollider.enabled = false;
-
+        Color color = material.color;
+        color.a = 0.5f;
+        material.color = color;
         // Wait for the duration the door should stay open
         yield return new WaitForSeconds(openDuration);
 
@@ -44,7 +62,8 @@ public class DoorLogic : MonoBehaviour
     {
         // Move door to closed position
         // Reset the material opacity
-        doorRenderer.color = new Color(doorRenderer.color.r, doorRenderer.color.g, doorRenderer.color.b, 1.0f);
+        color.a = 1f;
+        material.color = color;
         // Enable the collider
         doorCollider.enabled = true;
         isOpen = false;
