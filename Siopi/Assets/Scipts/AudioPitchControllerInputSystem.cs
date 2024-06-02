@@ -11,12 +11,14 @@ public class AudioPitchControllerInputSystem : MonoBehaviour
     public float pitchSmoothing = 0.05f; // Smoothing speed
 
     private bool isHumming;
-    private Vector2 humDir;
+    private float humInput; // Hum input as float
     public float targetPitch; // Target pitch based on input
     public float pitchValue;
     private CircleCollider2D circleCollider2D;
     private GameObject childObject;
     private SpriteRenderer childSpriteRenderer;
+
+    private float initialColliderRadius; // Store initial radius
 
     void Start()
     {
@@ -28,6 +30,7 @@ public class AudioPitchControllerInputSystem : MonoBehaviour
         childSpriteRenderer = childObject.GetComponent<SpriteRenderer>();
         childSpriteRenderer.enabled = false;
 
+        initialColliderRadius = circleCollider2D.radius; // Store initial radius
     }
 
     private void StartAudio()
@@ -46,6 +49,7 @@ public class AudioPitchControllerInputSystem : MonoBehaviour
             isHumming = true;
             circleCollider2D.enabled = true;
             childSpriteRenderer.enabled = true; // Turn on the child object's sprite renderer
+            StartCoroutine(ChangeColliderRadius());
         }
         else
         {
@@ -53,6 +57,9 @@ public class AudioPitchControllerInputSystem : MonoBehaviour
             isHumming = false;
             circleCollider2D.enabled = false;
             childSpriteRenderer.enabled = false; // Turn off the child object's sprite renderer
+            StopCoroutine(ChangeColliderRadius()); // Stop changing the radius
+            circleCollider2D.radius = initialColliderRadius; // Reset radius to initial value
+            targetPitch = pitchValue; // Set target pitch to current pitch
         }
     }
 
@@ -60,11 +67,8 @@ public class AudioPitchControllerInputSystem : MonoBehaviour
     {
         if (context.performed && isHumming)
         {
-            humDir = context.ReadValue<Vector2>();
-            if (humDir != Vector2.zero) // Validate the input is not zero
-            {
-                AdjustPitch(humDir);
-            }
+            humInput = context.ReadValue<float>();
+            AdjustPitch(humInput);
         }
     }
 
@@ -73,16 +77,9 @@ public class AudioPitchControllerInputSystem : MonoBehaviour
         audioSource.Stop();
     }
 
-    private void AdjustPitch(Vector2 rotateInput)
+    private void AdjustPitch(float input)
     {
-        float angleRadians = Mathf.Atan2(rotateInput.y, rotateInput.x);
-        float angleDegrees = angleRadians * Mathf.Rad2Deg;
-        if (angleDegrees < 0)
-        {
-            angleDegrees += 360;
-        }
-
-        targetPitch = Mathf.Lerp(minPitch, maxPitch, angleDegrees / 360.0f);
+        targetPitch = Mathf.Lerp(minPitch, maxPitch, Mathf.Clamp01((input + 1) / 2)); // Assuming input range is -1 to 1
     }
 
     void Update()
@@ -98,35 +95,58 @@ public class AudioPitchControllerInputSystem : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Platform"))
         {
-            
+            Debug.Log(other);
             PlatformMove platformMove = other.GetComponent<PlatformMove>();
-            Debug.Log(platformMove);
-            if (pitchValue >= 1.1f) // N#
+            if (platformMove != null)
             {
-                platformMove.PerformAction();
+                Debug.Log("Platform detected with PlatformMove component"); // Debug log
+                if (pitchValue >= 1.1f)
+                {
+                    platformMove.PerformAction();
+                }
             }
             else
             {
-                //Debug.LogError("Error: Component not found on the object with tag 'Llatform'");
+                Debug.LogError("Error: PlatformMove component not found on the platform object"); // Error log
             }
         }
-        else
+        else if (other.gameObject.CompareTag("Door"))
         {
-            if (other.gameObject.CompareTag("Door") && pitchValue <= 0.8f && pitchValue != 0)
+            if (pitchValue <= 0.8f && pitchValue != 0)
             {
                 DoorLogic doorLogic = other.GetComponent<DoorLogic>();
-                if (doorLogic != null) // N#
+                if (doorLogic != null) // Added null check
                 {
                     doorLogic.ToggleDoor();
                 }
                 else
                 {
-                    Debug.LogError("Error: Component not found on the object with tag 'door'");
+                    Debug.LogError("Error: DoorLogic component not found on the door object"); // Error log
                 }
+            }
+        }
+    }
+
+    private IEnumerator ChangeColliderRadius()
+    {
+        while (true)
+        {
+            // Increase radius
+            for (float r = circleCollider2D.radius; r <= initialColliderRadius + 0.3; r += 0.1f)
+            {
+                circleCollider2D.radius = r;
+                yield return new WaitForSeconds(0.1f);
+            }
+
+            // Decrease radius
+            for (float r = circleCollider2D.radius; r >= initialColliderRadius; r -= 0.1f)
+            {
+                circleCollider2D.radius = r;
+                yield return new WaitForSeconds(0.1f);
             }
         }
     }

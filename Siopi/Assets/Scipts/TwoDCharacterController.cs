@@ -21,11 +21,13 @@ public class TwoDCharacterController : MonoBehaviour
     private Vector2 moveInput;
     private bool isGliding = false; // Track if the character is currently gliding
     public int collectibleCount = 0;
+    public Transform groundCheck; // Point from where to check for ground
+    public float groundCheckRadius = 0.1f; // Radius of the ground check circle
+    public LayerMask groundLayer; // Layer to consider as ground
 
 
     void Start()
     {
-        
         footstepManager = GetComponentInChildren<FootstepManager>();
         rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component attached to the character
     }
@@ -33,7 +35,8 @@ public class TwoDCharacterController : MonoBehaviour
     void Update()
     {
         RotateChildObject();
-
+        CheckGroundStatus();
+    
         if (isGliding && rb.velocity.y < 0 && !isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, -glideFallSpeed);
@@ -82,7 +85,7 @@ public class TwoDCharacterController : MonoBehaviour
         if (context.performed && isGrounded)
         {
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-            isGrounded = false; // Assume not grounded until collision check
+            isGrounded = false; // Assume not grounded until raycast check
         }
     }
 
@@ -105,34 +108,31 @@ public class TwoDCharacterController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void CheckGroundStatus()
     {
-        if (collision.gameObject.tag == "Ground")
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        if (isGrounded)
         {
-            isGrounded = true;
-            isGliding = false;
-        } else
-        if (collision.gameObject.tag == "Platform")
-        {
-            isOnPlatform = true;
-            currentPlatform = collision.transform;
-            isGrounded = true;
             isGliding = false;
         }
-    }
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Platform")
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, groundCheckRadius, groundLayer);
+        if (hit.collider != null && hit.collider.CompareTag("Platform"))
+        {
+            isOnPlatform = true;
+            currentPlatform = hit.collider.transform;
+        }
+        else
         {
             isOnPlatform = false;
             currentPlatform = null;
         }
     }
+
     public void AddCollectible()
     {
         collectibleCount++;
-        if(collectibleCount>=4)
+        if (collectibleCount >= 4)
         {
             isBDoorOpen = true;
             //openDoor

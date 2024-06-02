@@ -28,7 +28,7 @@ public class RatEnemy : MonoBehaviour
             // Check for obstacles or ledges
             if (CheckForObstaclesAndLedges())
             {
-                Debug.Log("bingo");
+                //Debug.Log("bingo");
                 // Change direction
                 Flip(); // Flip the enemy sprite to face the new direction
             }

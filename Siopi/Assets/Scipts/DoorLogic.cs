@@ -6,32 +6,28 @@ public class DoorLogic : MonoBehaviour
 {
     public float openDuration = 2.0f; // Time door stays open before closing
     private Collider2D doorCollider;
-   // private material material
+//    private Renderer renderer;
+//    private Material material;
+   // private Color color;
     private bool isOpen = false;
-    private Material material;
-    private Renderer renderer;
-    private Color color;
 
     void Start()
     {
         doorCollider = GetComponent<Collider2D>();
-         renderer = GetComponent<Renderer>();
-        if(!renderer)
-        {
-            Debug.Log("doorMbroken");
-        }
-        else
-        {
-             material = renderer.material;
-             color = material.color;
-            
-        }
-        //FIX doorRenderer = GetComponent<SpriteRenderer>();
+      //  renderer = GetComponent<Renderer>();
+       // if (!renderer)
+      //  {
+      //      Debug.Log("Door material is missing.");
+      //  }
+     //   else
+     //   {
+    //        material = renderer.material;
+      //      color = material.color;
+     //   }
     }
 
     public void ToggleDoor()
     {
-
         if (!isOpen)
         {
             StartCoroutine(OpenDoor());
@@ -40,17 +36,18 @@ public class DoorLogic : MonoBehaviour
 
     IEnumerator OpenDoor()
     {
-        
-        Debug.Log("doorworkingsupposedly");
+        Debug.Log("Door opening.");
         isOpen = true;
-        
-        // Halve the material opacity
-     //   doorRenderer.color = new Color(doorRenderer.color.r, doorRenderer.color.g, doorRenderer.color.b, 0.5f);
-        // Disable the collider
+
+        // Disable the collider and children
         doorCollider.enabled = false;
-        Color color = material.color;
-        color.a = 0.5f;
-        material.color = color;
+        SetChildrenActive(false);
+
+        // Halve the material opacity
+       // Color color = material.color;
+     //   color.a = 0.5f;
+     //   material.color = color;
+
         // Wait for the duration the door should stay open
         yield return new WaitForSeconds(openDuration);
 
@@ -60,12 +57,22 @@ public class DoorLogic : MonoBehaviour
 
     void CloseDoor()
     {
-        // Move door to closed position
         // Reset the material opacity
-        color.a = 1f;
-        material.color = color;
-        // Enable the collider
+       // color.a = 1f;
+       // material.color = color;
+
+        // Enable the collider and children
         doorCollider.enabled = true;
+        SetChildrenActive(true);
+
         isOpen = false;
+    }
+
+    void SetChildrenActive(bool isActive)
+    {
+        foreach (Transform child in transform)
+        {
+            child.gameObject.SetActive(isActive);
+        }
     }
 }

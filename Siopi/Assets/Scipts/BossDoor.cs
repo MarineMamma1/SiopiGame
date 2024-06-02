@@ -23,7 +23,9 @@ public class BossDoor : MonoBehaviour
             Debug.Log("Playaaaa");   
                if (twoDCharacterController.isBDoorOpen)
             {
-                ActivateDoor();
+                // ActivateDoor();
+                GameManager.Instance.WinGame();
+
             }
         }
     }

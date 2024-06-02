@@ -18,7 +18,7 @@
                     "name": "HumSelection",
                     "type": "Value",
                     "id": "05dcedc5-0e50-4e12-a6a1-278f7df787cb",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -204,33 +204,11 @@
                 },
                 {
                     "name": "",
-                    "id": "c1f7a91b-d0fd-4a62-997e-7fb9b69bf235",
-                    "path": "<Gamepad>/rightStick",
+                    "id": "3a3553ac-1a82-427c-a7cb-672abda24cda",
+                    "path": "<Mouse>/scroll/y",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad;Joystick",
-                    "action": "HumSelection",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "8c8e490b-c610-4785-884f-f04217b23ca4",
-                    "path": "<Pointer>/delta",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "HumSelection",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3e5f5442-8668-4b27-a940-df99bad7e831",
-                    "path": "<Joystick>/{Hatswitch}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Joystick;Keyboard&Mouse;Gamepad",
+                    "groups": "",
                     "action": "HumSelection",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -282,7 +260,7 @@
                 {
                     "name": "",
                     "id": "a6a237cc-dc55-41d5-823d-91de11375778",
-                    "path": "<Keyboard>/h",
+                    "path": "<Keyboard>/leftShift",
                     "interactions": "Hold",
                     "processors": "",
                     "groups": "Keyboard&Mouse;Gamepad;Joystick;Touch;XR",
