@@ -15,16 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "HumSelection",
-                    "type": "Value",
-                    "id": "05dcedc5-0e50-4e12-a6a1-278f7df787cb",
-                    "expectedControlType": "Axis",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "jump",
+                    "name": "Jump",
                     "type": "Button",
                     "id": "bc3c516b-a77c-49a2-a945-3fedb2509d52",
                     "expectedControlType": "Button",
@@ -42,15 +33,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Hum",
-                    "type": "Button",
-                    "id": "3e6d7ea3-c1df-4587-b1b6-dbcfdd2ec454",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Fire",
                     "type": "Button",
                     "id": "d07210fe-1166-4f43-a0eb-70f0f169ccf2",
@@ -63,6 +45,15 @@
                     "name": "PauseMenu",
                     "type": "Button",
                     "id": "98678b2c-f8a9-40a1-9c8c-24811e86d558",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RunInput",
+                    "type": "Button",
+                    "id": "7eac93a2-d179-4124-a61e-7dd9c0336179",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -204,23 +195,12 @@
                 },
                 {
                     "name": "",
-                    "id": "3a3553ac-1a82-427c-a7cb-672abda24cda",
-                    "path": "<Mouse>/scroll/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "HumSelection",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "143bb1cd-cc10-4eca-a2f0-a3664166fe91",
                     "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "jump",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -231,7 +211,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "jump",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -242,40 +222,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Joystick",
-                    "action": "jump",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "00c5f896-9649-47bb-bd4e-d2d5c2934631",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/e",
                     "interactions": "Hold(duration=0.2)",
                     "processors": "",
                     "groups": "",
                     "action": "Glide",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a6a237cc-dc55-41d5-823d-91de11375778",
-                    "path": "<Keyboard>/leftShift",
-                    "interactions": "Hold",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse;Gamepad;Joystick;Touch;XR",
-                    "action": "Hum",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3bda4dbf-113d-4058-8b0e-360e14d6e5fb",
-                    "path": "<XInputController>/buttonNorth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Hum",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -309,6 +267,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "PauseMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "051dd0f2-d438-4221-be18-ef3941908e61",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RunInput",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
