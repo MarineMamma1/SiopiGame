@@ -520,10 +520,10 @@ MonoBehaviour:
   acceleration: 60
   deceleration: 60
   airAcceleration: 45
-  airDeceleration: 5
+  airDeceleration: 8
   rotationSpeed: 720
-  jumpForce: 9
-  gravity: -9.8
+  jumpForce: 7
+  gravity: -5.24
   glideGravity: -2
   maxFallSpeed: -55.56
   coyoteTime: 0.1
@@ -767,7 +767,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 35.73999, y: -31.47}
+  m_AnchoredPosition: {x: 35.73999, y: -31.46997}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &184334896
@@ -1305,7 +1305,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350366917}
-  m_LocalRotation: {x: 0.20893048, y: 0.017516285, z: -0.0037429037, w: 0.97776645}
+  m_LocalRotation: {x: 0.20893049, y: 0.017516585, z: -0.0037429682, w: 0.97776645}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1733,7 +1733,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483504950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.17944622, y: 1.696558, z: -5.0067854}
+  m_LocalPosition: {x: -0.17945004, y: 1.696558, z: -5.0067854}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1806,7 +1806,7 @@ MonoBehaviour:
     m_DecelTime: 0.1
     m_InputAxisName: Mouse Y
     m_InputAxisValue: 0
-    m_InvertInput: 0
+    m_InvertInput: 1
     m_MinValue: 0
     m_MaxValue: 1
     m_Wrap: 0
@@ -1830,7 +1830,7 @@ MonoBehaviour:
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
-    m_InvertInput: 1
+    m_InvertInput: 0
     m_MinValue: -180
     m_MaxValue: 180
     m_Wrap: 1
@@ -2336,7 +2336,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853830189}
-  m_LocalRotation: {x: 0.2370341, y: 0.017401045, z: -0.0042463574, w: 0.97133625}
+  m_LocalRotation: {x: 0.2370341, y: 0.01740143, z: -0.0042464514, w: 0.9713362}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3661,7 +3661,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299860337}
-  m_LocalRotation: {x: 0.20893046, y: 0.017516268, z: -0.0037428995, w: 0.97776645}
+  m_LocalRotation: {x: 0.20893046, y: 0.017516604, z: -0.0037429715, w: 0.97776645}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3911,7 +3911,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1345396498}
-  m_LocalRotation: {x: 0.18084052, y: 0.017616248, z: -0.003239674, w: 0.9833493}
+  m_LocalRotation: {x: 0.1808405, y: 0.017616656, z: -0.0032397492, w: 0.9833493}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4593,8 +4593,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freeLookCamera: {fileID: 483504954}
-  sensitivity: 0.1
-  orbitSpeed: 0.42
+  sensitivity: 1
+  orbitSpeed: 0.1
   minDistance: 0.5
   maxDistance: 10
   collisionBuffer: 0.1
