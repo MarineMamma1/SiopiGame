@@ -4,9 +4,6 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(CharacterController))]
 public class CharacterController3D : MonoBehaviour
 {
-    
-   
-
     [Header("Movement")]
     public float walkSpeed = 5f;
     public float runSpeed = 8f;
@@ -14,7 +11,7 @@ public class CharacterController3D : MonoBehaviour
     public float deceleration = 60f;
     public float airAcceleration = 30f;
     public float airDeceleration = 10f;
-    public float rotationSpeed = 720f; // New: Character rotation speed in degrees per second
+    public float rotationSpeed = 720f;
 
     [Header("Jumping")]
     public float jumpForce = 10f;
@@ -23,6 +20,11 @@ public class CharacterController3D : MonoBehaviour
     public float maxFallSpeed = -20f;
     public float coyoteTime = 0.2f;
     public float jumpBufferTime = 0.2f;
+
+    [Header("Gliding")]
+    public float minVerticalSpeedForGlide = -2f; // Minimum falling speed to start gliding
+    public float glideTransitionSpeed = 2f; // Speed at which gravity is reduced to glide gravity
+    public float glideSlope = -0.5f; // The rate at which the character descends while gliding
 
     [Header("Air Control")]
     public float airControl = 0.3f;
@@ -42,7 +44,7 @@ public class CharacterController3D : MonoBehaviour
     [Header("Camera")]
     public Transform cameraTransform;
 
-    public CharacterController controller;
+    private CharacterController controller;
 
     private Vector3 horizontalVelocity;
     private float verticalVelocity;
@@ -71,7 +73,6 @@ public class CharacterController3D : MonoBehaviour
 
     private void UpdateCurrentSpeed()
     {
-        // Calculate the current speed based on horizontal and vertical velocity
         CurrentSpeed = new Vector3(horizontalVelocity.x, verticalVelocity, horizontalVelocity.z).magnitude;
     }
 
@@ -116,7 +117,6 @@ public class CharacterController3D : MonoBehaviour
             float accelerationRate = isGrounded ? acceleration : airAcceleration;
             if (!isGrounded)
             {
-                // Apply limited air control
                 targetVelocity = Vector3.Lerp(horizontalVelocity, targetVelocity, airControl * Time.deltaTime);
             }
 
@@ -146,7 +146,15 @@ public class CharacterController3D : MonoBehaviour
     {
         if (!isGrounded)
         {
-            float gravityToApply = isGliding ? glideGravity : gravity;
+            float gravityToApply = isGliding ? Mathf.Lerp(gravity, glideGravity, Time.deltaTime * glideTransitionSpeed) : gravity;
+
+            // Prevent gliding unless falling
+            if (verticalVelocity <= minVerticalSpeedForGlide && isGliding)
+            {
+                gravityToApply = glideGravity;
+                verticalVelocity += glideSlope * Time.deltaTime; // Apply glide slope for realistic descent
+            }
+
             verticalVelocity += gravityToApply * Time.deltaTime;
             verticalVelocity = Mathf.Max(verticalVelocity, maxFallSpeed);
         }

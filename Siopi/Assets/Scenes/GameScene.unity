@@ -519,25 +519,27 @@ MonoBehaviour:
   runSpeed: 14
   acceleration: 60
   deceleration: 60
-  airAcceleration: 45
-  airDeceleration: 8
+  airAcceleration: 30
+  airDeceleration: 14
   rotationSpeed: 720
-  jumpForce: 7
-  gravity: -5.24
-  glideGravity: -2
+  jumpForce: 9.78
+  gravity: -12.53
+  glideGravity: -1.25
   maxFallSpeed: -55.56
   coyoteTime: 0.1
   jumpBufferTime: 0.1
-  airControl: 3
+  minVerticalSpeedForGlide: -1
+  glideTransitionSpeed: 19.16
+  glideSlope: 0
+  airControl: 2.36
   groundCheckRadius: -0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 136
   slopeLimit: 45
-  showDebug: 1
+  showDebug: 0
   characterModel: {fileID: 849014756}
   cameraTransform: {fileID: 350366918}
-  controller: {fileID: 150691302}
 --- !u!143 &150691302
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1305,7 +1307,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350366917}
-  m_LocalRotation: {x: 0.20893049, y: 0.017516585, z: -0.0037429682, w: 0.97776645}
+  m_LocalRotation: {x: 0.20893049, y: 0.017516652, z: -0.0037429826, w: 0.97776645}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2336,7 +2338,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853830189}
-  m_LocalRotation: {x: 0.2370341, y: 0.01740143, z: -0.0042464514, w: 0.9713362}
+  m_LocalRotation: {x: 0.2370341, y: 0.017401414, z: -0.0042464472, w: 0.9713362}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3661,7 +3663,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299860337}
-  m_LocalRotation: {x: 0.20893046, y: 0.017516604, z: -0.0037429715, w: 0.97776645}
+  m_LocalRotation: {x: 0.20893046, y: 0.017516637, z: -0.0037429787, w: 0.97776645}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
