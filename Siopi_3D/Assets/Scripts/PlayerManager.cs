@@ -10,6 +10,7 @@ public class PlayerManager : MonoBehaviour
     PlayerLocomotion playerLocomotion;
 
     public bool isInteracting;
+    public int  KeyAmount;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -35,4 +36,14 @@ public class PlayerManager : MonoBehaviour
         playerLocomotion.isJumping = animator.GetBool("isJumping");
         animator.SetBool("isGrounded", playerLocomotion.isGrounded);
     }
+
+    private void OnTriggerEnter(Collider other) 
+    {
+        if(other.tag == "Key")
+        {
+            KeyAmount += 1;
+            Destroy(other.gameObject);
+        }    
+    }
+
 }
