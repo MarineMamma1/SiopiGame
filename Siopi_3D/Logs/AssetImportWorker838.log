@@ -1,0 +1,245 @@
+Using pre-set license
+Built from '2022.1/staging' branch; Version is '2022.1.7f1 (240f4c1f462c) revision 2363212'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 32474 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.1.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker838
+-projectPath
+Z:/CRE312/Unity/Siopi_3D
+-logFile
+Logs/AssetImportWorker838.log
+-srvPort
+49358
+Successfully changed project path to: Z:/CRE312/Unity/Siopi_3D
+Z:/CRE312/Unity/Siopi_3D
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+mdb reader table full -> cleaning up stale readers. Current readers:
+    pid     thread     txnid
+     12240 454 -
+     12240 5b64 -
+     31692 8c84 -
+     36520 8f44 -
+     11236 5694 -
+     12240 3774 -
+     33456 8fe0 -
+     12240 4868 -
+     27896 939c -
+     37028 8a68 -
+     36532 8560 -
+     12240 46c -
+     13740 7684 -
+     34396 8b80 -
+      7724 8cc8 -
+     36728 80e0 -
+     26884 90c4 -
+     27152 937c -
+     37716 9198 -
+     34440 8de4 -
+     36360 5604 -
+     37828 93d0 -
+     34492 6b10 -
+     35508 930c -
+     30568 93b0 -
+      4216 78dc -
+     36372 8f60 -
+     28756 80b8 -
+     36500 92c8 -
+     34176 358c -
+     37512 8984 -
+     36904 7ae4 -
+     35908 63fc -
+     14668 7d30 -
+     19292 81fc -
+     37224 8ce4 -
+     30992 8858 -
+     35540 8404 -
+     35608 9178 -
+     30244 8df4 -
+     37088 9258 -
+     15008 7c54 -
+     19532 8f04 -
+     37636 87c0 -
+     37024 7fcc -
+     37472 934c -
+     23400 5658 -
+     30820 8a14 -
+     29596 9298 -
+     30956 92f4 -
+     37008 7084 -
+     36264 90fc -
+     36364 8d4c -
+     37444 6db0 -
+     36492 7e5c -
+     38560 96a4 -
+     38284 9590 -
+     38424 961c -
+     39604 9ab0 -
+     32388 57b4 -
+     28012 7d0c -
+     31488 7234 -
+     30068 89a4 -
+     19012 8300 -
+     37408 9a44 -
+     39760 9340 -
+     38420 1e20 -
+     25528 6dd4 -
+     12440 8950 -
+     30032 989c -
+     39300 9814 -
+     39148 9910 -
+     38512 9a78 -
+     32996 9b40 -
+     28772 5b40 -
+     27632 4fd4 -
+      7776 8988 -
+     38852 9798 -
+     32756 88ac -
+     39540 97b0 -
+     34636 9764 -
+     38488 2934 -
+     39448 8be8 -
+     39176 691c -
+     20108 9534 -
+     21916 8e3c -
+     39092 5ba8 -
+     38892 9920 -
+     39536 8a00 -
+     39056 8d14 -
+     39624 8cb4 -
+     29856 8d08 -
+     28628 2704 -
+     39720 75f8 -
+     38788 8c08 -
+     32164 7914 -
+     14476 7278 -
+     39488 9470 -
+     21312 9398 -
+     36852 901c -
+     39360 9b88 -
+     38868 8cd4 -
+     38028 95b4 -
+     34868 8968 -
+     24012 96cc -
+     27628 96dc -
+     38308 7674 -
+     38608 9330 -
+     35956 99f0 -
+     36136 927c -
+     37132 9878 -
+     36504 4804 -
+     34756 637c -
+     38068 7540 -
+     25160 3e2c -
+     38316 8128 -
+     39312 8370 -
+     39932 97f4 -
+     35948 93a0 -
+     38104 929c -
+     38684 3738 -
+     39924 8158 -
+     40392 9dcc -
+     40792 9f5c -
+     40832 9f84 -
+     36836 9248 -
+Cleaned out 118 stale readers
+Refreshing native plugins compatible for Editor in 126.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.7f1 (240f4c1f462c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path Z:/CRE312/Unity/Siopi_3D/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA Quadro RTX 4000 (ID=0x1eb1)
+    Vendor:   NVIDIA
+    VRAM:     7995 MB
+    Driver:   31.0.15.5152
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56628
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.011939 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 97.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.733 seconds
+Domain Reload Profiling:
+	ReloadAssembly (734ms)
+		BeginReloadAssembly (78ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (542ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (138ms)
+				TypeCache.Initialize (138ms)
+					TypeCache.ScanAssembly (137ms)
+				ResolveRequiredComponents (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (313ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (63ms)
+				SetLoadedEditorAssemblies (8ms)
+				RefreshPlugins (97ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (103ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.031316 seconds.
+Android Extension - Scanning For ADB Devices 4573 ms
