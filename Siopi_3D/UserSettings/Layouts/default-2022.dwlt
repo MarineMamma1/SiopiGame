@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 3440
     height: 1349
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 53
+  controlID: 51
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 54
+  controlID: 52
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 43
+  controlID: 41
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -318,22 +318,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Assets/Environment/Starter_Area
+    - Assets/Assets/Environment/Foiliage_GRP
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Assets/Environment/Starter_Area
+  - Assets/Assets/Environment/Foiliage_GRP
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\indyd\OneDrive\Documents\SiopiGame\Siopi_3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5ed80000
-    m_LastClickedID: 55390
-    m_ExpandedIDs: 0000000040d8000044d8000048d800004ad800005ed8000060d800006cd800006ed8000000ca9a3b
+    m_SelectedIDs: 1ee30000
+    m_LastClickedID: 58142
+    m_ExpandedIDs: 00000000f8e20000fce2000018e3000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -450,7 +450,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 9a2afbffe2c7fbffa8f0fcffacf0fcfff6a1ffff00a4ffff4ed90000f8d90000
+      m_ExpandedIDs: bcfbfeff1afcfeffc48effffa090ffff6697ffff4e99ffffcce3000050e40000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -754,9 +754,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 10.127291, y: 7.2179885, z: -9.252884}
+    m_Target: {x: -14.217203, y: -1.2266254, z: 5.695489}
     speed: 2
-    m_Value: {x: 10.127291, y: 7.2179885, z: -9.252884}
+    m_Value: {x: -14.217203, y: -1.2266254, z: 5.695489}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -802,13 +802,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.14996864, y: 0.34138814, z: -0.055234462, w: 0.92628}
+    m_Target: {x: -0.025359167, y: 0.9094443, z: -0.055988137, w: -0.4113881}
     speed: 2
-    m_Value: {x: 0.14873648, y: 0.33867568, z: -0.054274034, w: 0.9274861}
+    m_Value: {x: -0.025357813, y: 0.9093957, z: -0.055985145, w: -0.41136613}
   m_Size:
-    m_Target: 36.724358
+    m_Target: 11.676993
     speed: 2
-    m_Value: 36.724358
+    m_Value: 11.676993
   m_Ortho:
     m_Target: 0
     speed: 2
