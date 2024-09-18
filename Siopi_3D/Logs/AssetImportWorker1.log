@@ -15,7 +15,7 @@ C:/Users/indyd/OneDrive/Documents/SiopiGame/Siopi_3D
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63664
+56885
 Successfully changed project path to: C:/Users/indyd/OneDrive/Documents/SiopiGame/Siopi_3D
 C:/Users/indyd/OneDrive/Documents/SiopiGame/Siopi_3D
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/indyd/OneDrive/Documents/SiopiGame/Siopi_3D
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 445.27 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 196.34 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.1.7f1 (240f4c1f462c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/Resources/UnitySubsystems
@@ -63,179 +63,45 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56744
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56664
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012382 seconds.
+Registered in 0.009580 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 206.74 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 235.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.546 seconds
+- Completed reload, in  1.288 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1548ms)
-		BeginReloadAssembly (259ms)
+	ReloadAssembly (1289ms)
+		BeginReloadAssembly (234ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (3ms)
-		EndReloadAssembly (1077ms)
-			LoadAssemblies (249ms)
-			RebuildTransferFunctionScriptingTraits (2ms)
-			SetupTypeCache (260ms)
-				TypeCache.Initialize (259ms)
-					TypeCache.ScanAssembly (254ms)
+			CreateAndSetChildDomain (4ms)
+		EndReloadAssembly (878ms)
+			LoadAssemblies (218ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (190ms)
+				TypeCache.Initialize (189ms)
+					TypeCache.ScanAssembly (184ms)
 				ResolveRequiredComponents (1ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (628ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (551ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (15ms)
-				RefreshPlugins (207ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (257ms)
-				ProcessInitializeOnLoadMethodAttributes (130ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (14ms)
+				RefreshPlugins (235ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (207ms)
+				ProcessInitializeOnLoadMethodAttributes (70ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.039326 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\indyd\OneDrive\Documents\SiopiGame\Siopi_3D\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\indyd\OneDrive\Documents\SiopiGame\Siopi_3D\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 279.40 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  5.539 seconds
-Domain Reload Profiling:
-	ReloadAssembly (5542ms)
-		BeginReloadAssembly (1039ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (53ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (153ms)
-		EndReloadAssembly (4161ms)
-			LoadAssemblies (753ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1157ms)
-				TypeCache.Initialize (1120ms)
-					TypeCache.ScanAssembly (1099ms)
-				ResolveRequiredComponents (37ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (242ms)
-			SetupLoadedEditorAssemblies (2061ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (34ms)
-				SetLoadedEditorAssemblies (19ms)
-				RefreshPlugins (280ms)
-				BeforeProcessingInitializeOnLoad (345ms)
-				ProcessInitializeOnLoadAttributes (1034ms)
-				ProcessInitializeOnLoadMethodAttributes (323ms)
-				AfterProcessingInitializeOnLoad (27ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
-Refreshing native plugins compatible for Editor in 5.18 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5827 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 52 unused Assets / (418.5 KB). Loaded Objects now: 6287.
-Memory consumption went from 0.90 GB to 0.90 GB.
-Total: 15.920900 ms (FindLiveObjects: 0.990600 ms CreateObjectMapping: 2.180800 ms MarkObjects: 12.402000 ms  DeleteObjects: 0.345800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 40794.940585 seconds.
-  path: Assets/Assets/Environment/Bush_GRP/Flower_Bush_Mat.png
-  artifactKey: Guid(851e06309e19630479892257d2043115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Bush_GRP/Flower_Bush_Mat.png using Guid(851e06309e19630479892257d2043115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '979ca10d0cb6b11237766680b8769342') in 0.412407 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Starter_Terrain.asset
-  artifactKey: Guid(73334ac9fdd6da44e94fc2ae167e6de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Starter_Terrain.asset using Guid(73334ac9fdd6da44e94fc2ae167e6de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94ec30fe8fa23e82613de8b25a0b76c5') in 0.085231 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Assets/Environment/Eviroment_GRP
-  artifactKey: Guid(2084efcada075a54cac291b2156b167b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Eviroment_GRP using Guid(2084efcada075a54cac291b2156b167b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cca89c364fb1fd1dbcd90772a1ad3e05') in 0.039701 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/Assets/Environment/Bush_GRP/Flowery_Bush2_Flowery_Bush_Flowery_Bush_Flowery_Bush_FloweryBush__Mat.mat
-  artifactKey: Guid(0b89751b4ff4c7341bf77dcfb646edae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Bush_GRP/Flowery_Bush2_Flowery_Bush_Flowery_Bush_Flowery_Bush_FloweryBush__Mat.mat using Guid(0b89751b4ff4c7341bf77dcfb646edae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e7a2a45a56b46c0102134f7468131ce') in 12.114819 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001017 seconds.
-  path: Assets/PlayerControls.inputactions
-  artifactKey: Guid(c64519f13295a1447894e03ff7a2762b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerControls.inputactions using Guid(c64519f13295a1447894e03ff7a2762b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edd5154c85fb9cc39e074b657c04f235') in 0.058109 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002481 seconds.
-  path: Assets/New Terrain.asset
-  artifactKey: Guid(c6482d70de63c6840ac9b9cb1d270291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(c6482d70de63c6840ac9b9cb1d270291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d5e3505dea06aa09bd84b6fa52461e') in 0.041257 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000087 seconds.
-  path: Assets/UniversalRenderPipelineGlobalSettings.asset
-  artifactKey: Guid(38b35347542e5af4c9b140950c5b18db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(38b35347542e5af4c9b140950c5b18db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69e0a9ce4aa5cb9f003e7fe946761a1f') in 0.040629 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000076 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(73052cb935557464f92bb9041bffb513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(73052cb935557464f92bb9041bffb513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb9b66a37346f764bc6c22e8b29d9676') in 0.039870 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000076 seconds.
-  path: Assets/Scenes/Siopi_Main.unity
-  artifactKey: Guid(b6a07239fe83b7f429fcfde14f57cae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Siopi_Main.unity using Guid(b6a07239fe83b7f429fcfde14f57cae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba0523f741a233270c2b37120d8774f9') in 0.035661 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/Readme.asset
-  artifactKey: Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Readme.asset using Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c08644929bf45bac483e80ff91836c2c') in 0.046537 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/Assets/Environment/Eviroment_GRP/Lamp.fbx
-  artifactKey: Guid(d497d50d2d46a774d97e4b9a043adbb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Eviroment_GRP/Lamp.fbx using Guid(d497d50d2d46a774d97e4b9a043adbb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8630096bf461d305c4ab4a81d540bec') in 11.155171 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 56.105226 seconds.
-  path: Assets/Assets/Environment/Foiliage_GRP/TreeTrunk_Mat.png
-  artifactKey: Guid(a5c81dd2af8290c41a97882aeaec82fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Foiliage_GRP/TreeTrunk_Mat.png using Guid(a5c81dd2af8290c41a97882aeaec82fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b7eff791d9040f2a8a8289cc0063706') in 0.094918 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Registered in 0.016785 seconds.

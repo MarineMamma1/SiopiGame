@@ -15,7 +15,7 @@ C:/Users/indyd/OneDrive/Documents/SiopiGame/Siopi_3D
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57785
+49301
 Successfully changed project path to: C:/Users/indyd/OneDrive/Documents/SiopiGame/Siopi_3D
 C:/Users/indyd/OneDrive/Documents/SiopiGame/Siopi_3D
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/indyd/OneDrive/Documents/SiopiGame/Siopi_3D
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 543.73 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 546.02 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.1.7f1 (240f4c1f462c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/Resources/UnitySubsystems
@@ -63,95 +63,95 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56588
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.015997 seconds.
+Registered in 0.025839 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 318.70 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 271.66 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.232 seconds
+- Completed reload, in  2.652 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2234ms)
-		BeginReloadAssembly (382ms)
+	ReloadAssembly (2654ms)
+		BeginReloadAssembly (463ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (5ms)
-		EndReloadAssembly (1534ms)
-			LoadAssemblies (367ms)
-			RebuildTransferFunctionScriptingTraits (3ms)
-			SetupTypeCache (370ms)
-				TypeCache.Initialize (369ms)
-					TypeCache.ScanAssembly (365ms)
+		EndReloadAssembly (1499ms)
+			LoadAssemblies (449ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (351ms)
+				TypeCache.Initialize (350ms)
+					TypeCache.ScanAssembly (341ms)
 				ResolveRequiredComponents (1ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (96ms)
-			SetupLoadedEditorAssemblies (878ms)
+			RebuildScriptCaches (165ms)
+			SetupLoadedEditorAssemblies (689ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (47ms)
-				RefreshPlugins (319ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (13ms)
+				RefreshPlugins (273ms)
 				BeforeProcessingInitializeOnLoad (4ms)
-				ProcessInitializeOnLoadAttributes (371ms)
-				ProcessInitializeOnLoadMethodAttributes (118ms)
+				ProcessInitializeOnLoadAttributes (288ms)
+				ProcessInitializeOnLoadMethodAttributes (94ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.018008 seconds.
+Registered in 0.013065 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\indyd\OneDrive\Documents\SiopiGame\Siopi_3D\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\indyd\OneDrive\Documents\SiopiGame\Siopi_3D\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 276.84 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 245.40 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.918 seconds
+- Completed reload, in  8.800 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4920ms)
-		BeginReloadAssembly (355ms)
+	ReloadAssembly (8801ms)
+		BeginReloadAssembly (1087ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (24ms)
+			DisableScriptedObjects (17ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		EndReloadAssembly (4325ms)
-			LoadAssemblies (573ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (6962ms)
+			LoadAssemblies (4120ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1875ms)
-				TypeCache.Initialize (1816ms)
-					TypeCache.ScanAssembly (1794ms)
-				ResolveRequiredComponents (59ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (222ms)
-			SetupLoadedEditorAssemblies (1536ms)
+			SetupTypeCache (1343ms)
+				TypeCache.Initialize (1294ms)
+					TypeCache.ScanAssembly (1279ms)
+				ResolveRequiredComponents (49ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (391ms)
+			SetupLoadedEditorAssemblies (1647ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (31ms)
-				SetLoadedEditorAssemblies (16ms)
-				RefreshPlugins (277ms)
-				BeforeProcessingInitializeOnLoad (289ms)
-				ProcessInitializeOnLoadAttributes (709ms)
-				ProcessInitializeOnLoadMethodAttributes (193ms)
+				InitializePlatformSupportModulesInManaged (33ms)
+				SetLoadedEditorAssemblies (15ms)
+				RefreshPlugins (246ms)
+				BeforeProcessingInitializeOnLoad (258ms)
+				ProcessInitializeOnLoadAttributes (697ms)
+				ProcessInitializeOnLoadMethodAttributes (375ms)
 				AfterProcessingInitializeOnLoad (20ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 2.34 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.86 seconds
+Refreshing native plugins compatible for Editor in 2.63 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5827 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 52 unused Assets / (418.5 KB). Loaded Objects now: 6287.
 Memory consumption went from 0.90 GB to 0.90 GB.
-Total: 14.490200 ms (FindLiveObjects: 1.810800 ms CreateObjectMapping: 1.704400 ms MarkObjects: 10.638000 ms  DeleteObjects: 0.334900 ms)
+Total: 56.456200 ms (FindLiveObjects: 0.841300 ms CreateObjectMapping: 1.506700 ms MarkObjects: 13.903900 ms  DeleteObjects: 40.201800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -165,76 +165,22 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 24492.939760 seconds.
-  path: Assets/Assets/Environment/Starter_Area/Hedge_Export.fbx
-  artifactKey: Guid(64a2265800cb95c4886a7d3dfd55fd2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Starter_Area/Hedge_Export.fbx using Guid(64a2265800cb95c4886a7d3dfd55fd2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd766c961934918512dc6bdea3486d8e5') in 12.971109 seconds 
+  Time since last request: 55102.257167 seconds.
+  path: Assets/Assets/Environment/Foiliage_GRP/TreeFoiliage_Mat.mat
+  artifactKey: Guid(5163c5eb69f272647a41451902714fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/Foiliage_GRP/TreeFoiliage_Mat.mat using Guid(5163c5eb69f272647a41451902714fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50265d70d3d48ae9aa45bf7a0b9a25f3') in 10.896487 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1671.153516 seconds.
-  path: Assets/Assets/Environment/Starter_Area/Bush_Mat.png
-  artifactKey: Guid(1c10dc5b6191aa24692fb2c8e9c43491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Starter_Area/Bush_Mat.png using Guid(1c10dc5b6191aa24692fb2c8e9c43491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afe440f62e750d17432be8ca5d3e5835') in 0.515235 seconds 
+  Time since last request: 0.000096 seconds.
+  path: Assets/Assets/Environment/Foiliage_GRP/Bush_Mat.mat
+  artifactKey: Guid(fe358c52a51da794db0f5a0896e2d892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/Foiliage_GRP/Bush_Mat.mat using Guid(fe358c52a51da794db0f5a0896e2d892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c7da7e9112b92eb25060d2d98804f9d') in 0.156696 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 309.768243 seconds.
-  path: Assets/Assets/Environment/Starter_Area/Bush_GRP/Bush.mat
-  artifactKey: Guid(9fe33975f7e14374d874e08f3f4ae0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Starter_Area/Bush_GRP/Bush.mat using Guid(9fe33975f7e14374d874e08f3f4ae0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1063336c3378ca7b58edc1ba0ac20e8c') in 2.994847 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Assets/Environment/Starter_Area/Bush_GRP/FloweryBush.mat
-  artifactKey: Guid(790ad4a77434df1468231ecbc4f89eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Starter_Area/Bush_GRP/FloweryBush.mat using Guid(790ad4a77434df1468231ecbc4f89eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e7f4756d5243f2150038062089b504e') in 0.016282 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 316.333928 seconds.
-  path: Assets/Assets/Environment/Hub_Area/GrassCurbMat.mat
-  artifactKey: Guid(8eade5d23b469c04cbee2f62b1614143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Hub_Area/GrassCurbMat.mat using Guid(8eade5d23b469c04cbee2f62b1614143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0412a77264074cbe6cf3fa59ffbc3de') in 0.039149 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000071 seconds.
-  path: Assets/Assets/Environment/Hub_Area/Hub_Fence.obj
-  artifactKey: Guid(7e16470f6dbbae14abb9881216db7d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Hub_Area/Hub_Fence.obj using Guid(7e16470f6dbbae14abb9881216db7d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a8c05990a0e7b95d18acc54a8a4b72d') in 0.140257 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Assets/Environment/Hub_Area/Stairs_Export2.fbx
-  artifactKey: Guid(aa7f9a3473c9776439928396d4683ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Hub_Area/Stairs_Export2.fbx using Guid(aa7f9a3473c9776439928396d4683ae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b6b7ddb3f3649241297850004e7ff2') in 0.336808 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000088 seconds.
-  path: Assets/Assets/Environment/Hub_Area/Stair_Export.obj
-  artifactKey: Guid(7f458524e89f6d9478d1c91034a36b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Hub_Area/Stair_Export.obj using Guid(7f458524e89f6d9478d1c91034a36b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b77d330ebfc136ee5ffe370a21b00ea') in 0.067375 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Assets/Environment/Hub_Area/Hub_Base.obj
-  artifactKey: Guid(61367ec9ce1f11147b844902a6f5fee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Hub_Area/Hub_Base.obj using Guid(61367ec9ce1f11147b844902a6f5fee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ac603aa92dbf7a9e75464bac0957d21') in 0.095997 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.115170 seconds.
-  path: Assets/Assets/Characters/CharacterTpose.obj
-  artifactKey: Guid(2422a8acc64b66e4687ca04a1368c16d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/CharacterTpose.obj using Guid(2422a8acc64b66e4687ca04a1368c16d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef3d97172b250d75c15d7c5a6f9c184') in 0.091991 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 41.269791 seconds.
-  path: Assets/Assets/Environment/Terrain/CartoonyGround_baked1.png
-  artifactKey: Guid(01faea3525aac6246853e98d81d11b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Terrain/CartoonyGround_baked1.png using Guid(01faea3525aac6246853e98d81d11b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c558af2d1bb940df922d7d57d66f8b73') in 0.051826 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000108 seconds.
-  path: Assets/Assets/Environment/Terrain/pngtree-grass-23-texture-tiles-tile-photo-picture-image_3497856.jpg
-  artifactKey: Guid(3c7b599364ed00545bfbb0b954f6e79d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Environment/Terrain/pngtree-grass-23-texture-tiles-tile-photo-picture-image_3497856.jpg using Guid(3c7b599364ed00545bfbb0b954f6e79d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3b432564aa7e350b7906028af31a0c0') in 0.043342 seconds 
+  Time since last request: 0.000520 seconds.
+  path: Assets/Assets/Environment/Foiliage_GRP/TreeLeaves_Mat.png
+  artifactKey: Guid(a665a2590c80c3642a0b509ff80362f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Environment/Foiliage_GRP/TreeLeaves_Mat.png using Guid(a665a2590c80c3642a0b509ff80362f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7baca2c6e8628eb1b911bf0ad03e0c99') in 0.143324 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
