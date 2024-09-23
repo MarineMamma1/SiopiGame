@@ -39,7 +39,7 @@
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\Key.cs" />
-     <Compile Include="Assets\PlayerControls.cs" />
+     <Compile Include="Assets\Scripts\PlayerControls.cs" />
      <Compile Include="Assets\Scripts\PlayerRespawn.cs" />
      <Compile Include="Assets\Scripts\PlayerLocomotion.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -49,13 +49,14 @@
      <Compile Include="Assets\CRE311 package\ThirdPersonCam.cs" />
      <Compile Include="Assets\Scripts\ResetBool.cs" />
      <Compile Include="Assets\Scripts\KillFloor.cs" />
-     <Compile Include="Assets\ResetIsJumping.cs" />
+     <Compile Include="Assets\Scripts\ResetIsJumping.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Scripts\RestartLevel.cs" />
      <Compile Include="Assets\Scripts\EnemyFollow.cs" />
      <Compile Include="Assets\Scripts\FollowScript.cs" />
      <Compile Include="Assets\Scripts\CameraManager.cs" />
      <Compile Include="Assets\Scripts\InputManager.cs" />
+     <Compile Include="Assets\Scripts\BulletScript.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

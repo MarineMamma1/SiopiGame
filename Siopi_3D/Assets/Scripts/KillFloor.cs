@@ -11,7 +11,10 @@ public class KillFloor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        player.transform.position = respawn_point.transform.position;
-        GameManager.health -= 1;
+        if(other.gameObject.tag == "Player")
+        {
+            GameManager.health -= 1;
+            player.transform.position = respawn_point.transform.position;
+        }
     }
 }
