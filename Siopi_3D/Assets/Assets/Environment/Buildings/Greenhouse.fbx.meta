@@ -3,7 +3,27 @@ guid: 2cea299d18b9a7a4f8c6320a34d7994c
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GreenhouseFloor_Mat
+    second: {fileID: 2100000, guid: fe7cc64b76a8aee42b3da86fb189aa2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GreenhouseGlass_Mat
+    second: {fileID: 2100000, guid: 1b1b07fe27e8c694d8d30cbe6fd6d59e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GreenhouseGold_Mat
+    second: {fileID: 2100000, guid: b78bd2306f864b348ae18446809ce911, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GreenhouseKeyhole_Mat
+    second: {fileID: 2100000, guid: b0860eb10816bde43a37d7080382e89d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

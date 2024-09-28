@@ -3,7 +3,22 @@ guid: d497d50d2d46a774d97e4b9a043adbb7
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LampPost_LampGlass_Mat
+    second: {fileID: 2100000, guid: ba26ec83d99091946b3a6b8c0215e358, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LampPost_LampMetalGold_Mat
+    second: {fileID: 2100000, guid: fcdf8df5066ab5240a433b1c2b52b6e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LampPost_LampMetal_Mat
+    second: {fileID: 2100000, guid: 8b76e7c40623d17459d7ed3cb0b8008a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
