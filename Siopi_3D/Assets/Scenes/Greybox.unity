@@ -1961,7 +1961,7 @@ MonoBehaviour:
   timer: 5
   enemyBullet: {fileID: 7863313085785548963, guid: 013cf0ef8e6d46c4cb5df1d9cacb6d94, type: 3}
   spawnPoint: {fileID: 1952262462}
-  enemySpeed: 1000
+  enemySpeed: 600
 --- !u!195 &1419322284
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3413,14 +3413,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952262461}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 23.2, z: 0}
+  m_LocalRotation: {x: -0.21643952, y: 0, z: 0, w: 0.97629607}
+  m_LocalPosition: {x: 0, y: 43.499996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1419322281}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -25, y: 0, z: 0}
 --- !u!1 &2007772602
 GameObject:
   m_ObjectHideFlags: 0

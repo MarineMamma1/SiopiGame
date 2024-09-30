@@ -14,6 +14,7 @@ public class EnemyFollow : MonoBehaviour
     public GameObject enemyBullet;
     public Transform spawnPoint;
     public float enemySpeed;
+
     
 
 
@@ -35,7 +36,7 @@ public class EnemyFollow : MonoBehaviour
     {
         bulletTime -= Time.deltaTime;
 
-        if (bulletTime > 0) return;
+        if (bulletTime > 0 ) return;
 
         bulletTime = timer;
 
@@ -43,6 +44,7 @@ public class EnemyFollow : MonoBehaviour
         Rigidbody bulletRig = bulletObj.GetComponent<Rigidbody>();
         bulletRig.AddForce(bulletRig.transform.forward * enemySpeed);
         Destroy(bulletObj, 5f);
+
     }
 
     private void OnTriggerEnter(Collider other) 
