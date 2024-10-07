@@ -33,6 +33,8 @@ public class PlayerLocomotion : MonoBehaviour
     public float jumpHeight = 3;
     public float gravityIntensity = -15;
 
+    public float  jumpForce;
+
     private void Awake() 
     {
         playerManager = GetComponent<PlayerManager>();
@@ -140,12 +142,20 @@ public class PlayerLocomotion : MonoBehaviour
             {
                 animatorManager.animator.SetBool("isJumping", true);
                 animatorManager.PlayTargetAnimation("Jump", false);
-
-                float jumpingVelocity = Mathf.Sqrt(-2 * gravityIntensity * jumpHeight);
-                Vector3 playerVelocity = moveDirection;
-                playerVelocity.y = jumpingVelocity;
-                playerRigidbody.velocity = playerVelocity;
+                Jump();
+             //  float jumpingVelocity = Mathf.Sqrt(-2 * gravityIntensity * jumpHeight);
+             //  Vector3 playerVelocity = moveDirection;
+             //  playerVelocity.y = jumpingVelocity;
+             //  playerRigidbody.velocity = playerVelocity;
             }
         }
+ private void Jump()
+    {
+      
+        playerRigidbody.velocity = new Vector3(playerRigidbody.velocity.x, 0f, playerRigidbody.velocity.z);
+        playerRigidbody.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+       
 
+
+    }
 }

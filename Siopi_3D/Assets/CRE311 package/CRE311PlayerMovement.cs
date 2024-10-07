@@ -26,7 +26,7 @@ public class CRE311PlayerMovement : MonoBehaviour
 
     public float playerHeight;
     public LayerMask whatISGround;
-    bool grounded; 
+    public bool grounded; 
 
     public Transform orientation;
 
@@ -98,8 +98,9 @@ public class CRE311PlayerMovement : MonoBehaviour
 
        
 
-        if(Input.GetKey(jumpKey) && readyToJump && grounded)
+        if(Input.GetButtonDown("Jump") && readyToJump && grounded)
         {
+            Debug.Log("hey Im Jumpin here");
             anim.ResetTrigger("jump");
             readyToJump = false;
             Jump();
