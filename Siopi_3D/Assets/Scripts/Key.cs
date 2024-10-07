@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class Key : MonoBehaviour
 {
-    //public GameObject door;
-    //public GameObject player;
+    public GameObject door;
+    public GameObject player;
 
-       // private void OnTriggerEnter(Collider other) 
-        //{   
-            //if (GetComponent<Collider>().CompareTag("Player"))
-            //{
-                //Debug.Log("Key Picked Up");
+        private void OnTriggerEnter(Collider other) 
+        {   
+            if (GetComponent<Collider>().CompareTag("Player"))
+            {
+                Debug.Log("Key Picked Up");
 
-                //door.GetComponent<collider>().enabled = false;
-                
-                //.gameObject.SetActive(false);
-           // }
+                door.GetComponent<Collider>().enabled = false;
+                gameObject.SetActive(false);
+            }
             
-        //}
+        }
 }
