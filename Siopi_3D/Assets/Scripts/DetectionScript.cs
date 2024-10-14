@@ -9,7 +9,6 @@ public class DetectionScript : MonoBehaviour
 public GameObject DetectionCollider;
 public Transform player;
 public Transform target;
-public Transform targetObj;
 
     void OnTriggerStay(Collider target)
 {
