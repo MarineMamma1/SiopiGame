@@ -9,10 +9,11 @@ public class FollowScript : MonoBehaviour
     public float detectionAngle = 90.0f;
     public Transform targetObj;
 
-    private void Update
+    private void Start()    
     {
         //LookForPlayer();
     }
+
 
     private PlayerManager LookForPlayer()
     {
@@ -35,7 +36,7 @@ public class FollowScript : MonoBehaviour
         return null;
     }
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         transform.position = Vector3.MoveTowards(this.transform.position, targetObj.position, 1 * Time.deltaTime);
     }
