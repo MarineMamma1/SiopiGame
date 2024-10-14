@@ -5,9 +5,17 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     InputManager inputManager;
+        public static PlayerManager Instance
+    {
+        get
+        {
+            return s_Instance;
+        }
+    }
     Animator animator;
     CameraManager cameraManager;
     PlayerLocomotion playerLocomotion;
+    private static PlayerManager s_Instance;
 
     public bool isInteracting;
     public int  KeyAmount;

@@ -11,7 +11,7 @@ public class FollowScript : MonoBehaviour
 
     private void Start()    
     {
-        //LookForPlayer();
+        LookForPlayer();
     }
 
 
@@ -38,6 +38,6 @@ public class FollowScript : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        transform.position = Vector3.MoveTowards(this.transform.position, targetObj.position, 1 * Time.deltaTime);
+        //transform.position = Vector3.MoveTowards(this.transform.position, targetObj.position, 1 * Time.deltaTime);
     }
 }

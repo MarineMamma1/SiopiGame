@@ -151,6 +151,14 @@ public class CRE311PlayerMovement : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter(Collider other) 
+    {
+        if(other.gameObject.tag == "Enemy")
+        {
+            GameManager.health -= 1;
+            Destroy(other.gameObject);
+        }
+    }
     
-
+        //OnCollissionEnter
 }

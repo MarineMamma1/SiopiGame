@@ -47,7 +47,7 @@ public class EnemyFollow : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other) 
+    private void OnCollissionEnter(Collider other) 
     {
         if(other.gameObject.tag == "Player")
         {
