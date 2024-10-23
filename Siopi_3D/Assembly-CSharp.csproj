@@ -43,7 +43,9 @@
      <Compile Include="Assets\Scripts\BulletScript.cs" />
      <Compile Include="Assets\PlayerControls.cs" />
      <Compile Include="Assets\Scripts\PatrolScript.cs" />
+     <Compile Include="Assets\Scripts\ReSpawn\RespawnManager.cs" />
      <Compile Include="Assets\Scripts\Key.cs" />
+     <Compile Include="Assets\Scripts\ReSpawn\RespwnKilllFloor.cs" />
      <Compile Include="Assets\Scripts\PlayerRespawn.cs" />
      <Compile Include="Assets\Scripts\PlayerLocomotion.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -56,13 +58,11 @@
      <Compile Include="Assets\Scripts\ResetIsJumping.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Scripts\RestartLevel.cs" />
+     <Compile Include="Assets\Scripts\ReSpawn\RespawnCollider.cs" />
      <Compile Include="Assets\Scripts\EnemyFollow.cs" />
      <Compile Include="Assets\Scripts\FollowScript.cs" />
      <Compile Include="Assets\Scripts\CameraManager.cs" />
      <Compile Include="Assets\Scripts\InputManager.cs" />
-     <Compile Include="Assets\Scripts\ReSpawn\RespawnCollider.cs" />
-     <Compile Include="Assets\Scripts\ReSpawn\RespawnManager.cs" />
-     <Compile Include="Assets\Scripts\ReSpawn\RespwnKilllFloor.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

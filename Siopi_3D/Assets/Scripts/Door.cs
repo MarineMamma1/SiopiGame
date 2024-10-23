@@ -29,7 +29,7 @@ public class Door : MonoBehaviour
 
         private void OnTriggerEnter(Collider other) 
         {
-            if(other.tag == "Player" && keys.KeyAmount >= 1)
+            if(other.tag == "Player" && keys.KeyAmount >= 3)
             {
                 keys.KeyAmount -= 1;
                 anim.SetTrigger("OpenDoor");

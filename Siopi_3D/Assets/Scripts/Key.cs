@@ -12,7 +12,6 @@ public class Key : MonoBehaviour
             if (GetComponent<Collider>().CompareTag("Player"))
             {
                 Debug.Log("Key Picked Up");
-
                 door.GetComponent<Collider>().enabled = false;
                 gameObject.SetActive(false);
             }
