@@ -27,22 +27,23 @@ public class PlayerManager : MonoBehaviour
         playerLocomotion = GetComponent<PlayerLocomotion>();
     }
 
+    // I commented These out as They were not being used anywhere
     private void Update() 
     {
-        inputManager.HandleAllInputs();
+        //inputManager.HandleAllInputs();
     }
 
     private void FixedUpdate() 
     {
-        playerLocomotion.HandleAllMovement();
+        //playerLocomotion.HandleAllMovement();
     }
     private void LateUpdate() 
     {
-        cameraManager.HandleAllCameraMovement();    
+        //cameraManager.HandleAllCameraMovement();    
 
-        isInteracting = animator.GetBool("isInteracting");
-        playerLocomotion.isJumping = animator.GetBool("isJumping");
-        animator.SetBool("isGrounded", playerLocomotion.isGrounded);
+        //isInteracting = animator.GetBool("isInteracting");
+        //playerLocomotion.isJumping = animator.GetBool("isJumping");
+        //animator.SetBool("isGrounded", playerLocomotion.isGrounded);
     }
 
     private void OnTriggerEnter(Collider other) 
