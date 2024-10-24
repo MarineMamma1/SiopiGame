@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.1.7f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-L:/I_Temp/SiopiGame/Siopi_3D
+C:/Users/34247632/Documents/GitHub/SiopiGame/Siopi_3D
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50806
-Successfully changed project path to: L:/I_Temp/SiopiGame/Siopi_3D
-L:/I_Temp/SiopiGame/Siopi_3D
+62566
+Successfully changed project path to: C:/Users/34247632/Documents/GitHub/SiopiGame/Siopi_3D
+C:/Users/34247632/Documents/GitHub/SiopiGame/Siopi_3D
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,11 +47,11 @@ L:/I_Temp/SiopiGame/Siopi_3D
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 120.88 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 112.33 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.1.7f1 (240f4c1f462c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path L:/I_Temp/SiopiGame/Siopi_3D/Assets
+[Subsystems] Discovering subsystems at path C:/Users/34247632/Documents/GitHub/SiopiGame/Siopi_3D/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -63,7 +63,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56828
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56704
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -71,7 +71,7 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/E
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.7f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.012131 seconds.
+Registered in 0.012418 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
@@ -80,93 +80,93 @@ Native extension for iOS target not found
 [usbmuxd] Send listen message
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 107.34 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 108.63 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.785 seconds
+- Completed reload, in  0.741 seconds
 Domain Reload Profiling:
-	ReloadAssembly (785ms)
-		BeginReloadAssembly (90ms)
+	ReloadAssembly (742ms)
+		BeginReloadAssembly (78ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (573ms)
-			LoadAssemblies (90ms)
+		EndReloadAssembly (547ms)
+			LoadAssemblies (76ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (125ms)
-				TypeCache.Initialize (124ms)
-					TypeCache.ScanAssembly (123ms)
+			SetupTypeCache (112ms)
+				TypeCache.Initialize (112ms)
+					TypeCache.ScanAssembly (111ms)
 				ResolveRequiredComponents (0ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (354ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (348ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (77ms)
+				InitializePlatformSupportModulesInManaged (75ms)
 				SetLoadedEditorAssemblies (9ms)
-				RefreshPlugins (107ms)
+				RefreshPlugins (109ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (111ms)
-				ProcessInitializeOnLoadMethodAttributes (48ms)
+				ProcessInitializeOnLoadAttributes (108ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.011038 seconds.
+Registered in 0.011464 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image L:\I_Temp\SiopiGame\Siopi_3D\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image L:\I_Temp\SiopiGame\Siopi_3D\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\34247632\Documents\GitHub\SiopiGame\Siopi_3D\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\34247632\Documents\GitHub\SiopiGame\Siopi_3D\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 111.16 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 113.15 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.639 seconds
+- Completed reload, in  1.676 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1640ms)
-		BeginReloadAssembly (206ms)
+	ReloadAssembly (1677ms)
+		BeginReloadAssembly (199ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (119ms)
-		EndReloadAssembly (1330ms)
-			LoadAssemblies (103ms)
+		EndReloadAssembly (1377ms)
+			LoadAssemblies (87ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (339ms)
-				TypeCache.Initialize (326ms)
-					TypeCache.ScanAssembly (321ms)
-				ResolveRequiredComponents (13ms)
+				TypeCache.Initialize (325ms)
+					TypeCache.ScanAssembly (320ms)
+				ResolveRequiredComponents (14ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (73ms)
-			SetupLoadedEditorAssemblies (740ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (791ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (36ms)
+				InitializePlatformSupportModulesInManaged (37ms)
 				SetLoadedEditorAssemblies (7ms)
-				RefreshPlugins (111ms)
-				BeforeProcessingInitializeOnLoad (127ms)
-				ProcessInitializeOnLoadAttributes (355ms)
-				ProcessInitializeOnLoadMethodAttributes (96ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				RefreshPlugins (113ms)
+				BeforeProcessingInitializeOnLoad (137ms)
+				ProcessInitializeOnLoadAttributes (384ms)
+				ProcessInitializeOnLoadMethodAttributes (102ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5836 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 53 unused Assets / (416.9 KB). Loaded Objects now: 6296.
+Unloading 5837 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (417.3 KB). Loaded Objects now: 6297.
 Memory consumption went from 0.90 GB to 0.90 GB.
-Total: 4.353400 ms (FindLiveObjects: 0.864800 ms CreateObjectMapping: 0.211100 ms MarkObjects: 3.129800 ms  DeleteObjects: 0.146700 ms)
+Total: 4.923400 ms (FindLiveObjects: 0.940100 ms CreateObjectMapping: 0.334200 ms MarkObjects: 3.481200 ms  DeleteObjects: 0.166900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -180,22 +180,46 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 762075.658123 seconds.
+  Time since last request: 872808.299520 seconds.
+  path: Assets/Scenes/Siopi_Main/NavMesh.asset
+  artifactKey: Guid(e9a20d21fae65894d9d219bd9fabc3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Siopi_Main/NavMesh.asset using Guid(e9a20d21fae65894d9d219bd9fabc3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '321367ee3a83d645afeb284d8f035dd8') in 0.046833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
   path: Assets/InputSystem.inputsettings.asset
   artifactKey: Guid(40f934eb5adc7d74b8cfd9d31b4c159a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InputSystem.inputsettings.asset using Guid(40f934eb5adc7d74b8cfd9d31b4c159a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6416bcf1d670a5cbf7be08bc80165bb4') in 0.037791 seconds 
+Start importing Assets/InputSystem.inputsettings.asset using Guid(40f934eb5adc7d74b8cfd9d31b4c159a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6416bcf1d670a5cbf7be08bc80165bb4') in 0.010349 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PlayerControls.inputactions
+  artifactKey: Guid(c64519f13295a1447894e03ff7a2762b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerControls.inputactions using Guid(c64519f13295a1447894e03ff7a2762b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edd5154c85fb9cc39e074b657c04f235') in 0.012959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
   path: Assets/New Terrain.asset
   artifactKey: Guid(c6482d70de63c6840ac9b9cb1d270291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(c6482d70de63c6840ac9b9cb1d270291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d5e3505dea06aa09bd84b6fa52461e') in 0.012805 seconds 
+Start importing Assets/New Terrain.asset using Guid(c6482d70de63c6840ac9b9cb1d270291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d5e3505dea06aa09bd84b6fa52461e') in 0.014596 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(73052cb935557464f92bb9041bffb513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(73052cb935557464f92bb9041bffb513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb9b66a37346f764bc6c22e8b29d9676') in 0.007761 seconds 
+  Time since last request: 0.000024 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(38b35347542e5af4c9b140950c5b18db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(38b35347542e5af4c9b140950c5b18db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69e0a9ce4aa5cb9f003e7fe946761a1f') in 0.010568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/Siopi_Main.unity
+  artifactKey: Guid(b6a07239fe83b7f429fcfde14f57cae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Siopi_Main.unity using Guid(b6a07239fe83b7f429fcfde14f57cae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2e4d346c65194031201df6b60f65317') in 0.007273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scenes/Siopi_Main
+  artifactKey: Guid(420e55f2eb5f87949938b4fa12a0e093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Siopi_Main using Guid(420e55f2eb5f87949938b4fa12a0e093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3225950a0b5361eb8f41a18d3ba2e565') in 0.006903 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
