@@ -19,6 +19,7 @@ public class PlayerManager : MonoBehaviour
 
     public bool isInteracting;
     public int  KeyAmount;
+    public int RecordAmount;
     private void Awake()
     {
         animator = GetComponent<Animator>();
