@@ -5,9 +5,12 @@ using UnityEngine;
 public class RecordGate : MonoBehaviour
 {
     public List<RecordPlace> statues;
+    private Animator anim;
+    public Animator animGate1;
+    public bool levelOpener;
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -27,7 +30,14 @@ public class RecordGate : MonoBehaviour
         }
         if(amountDone == statues.Count)
         {
-            
+            anim.SetTrigger("Open");
+        }
+        if(levelOpener)
+        {
+            if(amountDone == 1)
+            {
+                animGate1.SetTrigger("Open");
+            }
         }
     }
 }

@@ -6,7 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Greybox.unity
-    guid: 128cdaf75daa037499088e2420546da6
+    path: Assets/Scenes/Menus/Main Menu.unity
+    guid: 05a138c548782f84586c5e6d43c05658
+  - enabled: 1
+    path: Assets/Scenes/Siopi_Main.unity
+    guid: b6a07239fe83b7f429fcfde14f57cae3
+  - enabled: 1
+    path: Assets/Scenes/Menus/Settings.unity
+    guid: 4d1bc1e0fe0d4514d8df138f894afb87
+  - enabled: 1
+    path: Assets/Scenes/Menus/Credits.unity
+    guid: f356923640ec0074d8f7135cfd862264
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 40f934eb5adc7d74b8cfd9d31b4c159a, type: 2}

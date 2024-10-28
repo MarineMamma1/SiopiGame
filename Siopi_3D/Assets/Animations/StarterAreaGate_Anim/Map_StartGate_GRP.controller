@@ -56,7 +56,10 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Open
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5497569494211461596}
   m_Solo: 0
@@ -101,7 +104,13 @@ AnimatorController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Map_StartGate_GRP
   serializedVersion: 5
-  m_AnimatorParameters: []
+  m_AnimatorParameters:
+  - m_Name: Open
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -180,16 +189,16 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 5565318818064337206}
-    m_Position: {x: 350, y: 360, z: 0}
+    m_Position: {x: 240, y: 370, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5497569494211461596}
-    m_Position: {x: 590, y: 360, z: 0}
+    m_Position: {x: 480, y: 370, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8035204632901628067}
-    m_Position: {x: 840, y: 360, z: 0}
+    m_Position: {x: 770, y: 370, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4062674793904791663}
-    m_Position: {x: 130, y: 360, z: 0}
+    m_Position: {x: 0, y: 370, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -199,7 +208,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: -80, y: 270, z: 0}
   m_ExitPosition: {x: 170, y: 170, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -4062674793904791663}
+  m_DefaultState: {fileID: 5565318818064337206}
 --- !u!1102 &8035204632901628067
 AnimatorState:
   serializedVersion: 6

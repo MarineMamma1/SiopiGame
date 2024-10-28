@@ -22,6 +22,7 @@ public class PlayerManager : MonoBehaviour
     public int RecordAmount;
     private void Awake()
     {
+        s_Instance = this;
         animator = GetComponent<Animator>();
         inputManager = GetComponent<InputManager>();
         cameraManager = FindObjectOfType<CameraManager>();
