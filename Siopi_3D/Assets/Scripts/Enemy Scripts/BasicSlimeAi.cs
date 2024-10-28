@@ -101,21 +101,21 @@ void OnCollisionEnter(Collision collision)
     if (collision.collider.CompareTag("Player"))
     {
         // Check if the player is above the enemy (for the stomp)
-        if (collision.contacts[0].point.y > transform.position.y + 0.3f)  // Adjust 0.5f as needed based on enemy size
+        if (collision.contacts[0].point.y > transform.position.y + 0.2f)  // Adjust 0.5f as needed based on enemy size
         {
             Debug.Log("Lmao get stomped");
 
-            // Apply an upward force to the player to simulate bounce (optional)
             Rigidbody playerRb = collision.collider.GetComponent<Rigidbody>();
             if (playerRb != null)
             {
-                playerRb.AddForce(Vector3.up * 5f, ForceMode.Impulse); // Adjust force strength as needed
+                playerRb.AddForce(Vector3.up * 5f, ForceMode.Impulse);
             }
 
             Destroy(gameObject);
         }
         else
         {
+            // God I wish I could Kamikaze myself rn
             KamikazeAttack();
         }
     }
