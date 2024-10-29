@@ -23,6 +23,8 @@ public class GameOverTrigger : MonoBehaviour
         if (other.tag == "Player")
         {
             WinPanel.SetActive (true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 }

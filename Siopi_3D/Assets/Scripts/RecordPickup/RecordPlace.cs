@@ -24,6 +24,7 @@ public class RecordPlace : MonoBehaviour
             PlayerManager.Instance.RecordAmount--;
             record.SetActive(true);
             gate.CheckHowMany();
+            
         }
         }
         

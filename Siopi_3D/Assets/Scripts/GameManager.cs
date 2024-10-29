@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour
                 heart1.gameObject.SetActive(false);
                 heart2.gameObject.SetActive(false);
                 heart3.gameObject.SetActive(false);
+                Die();
                 break;
             default:
                 heart0.gameObject.SetActive(false);
@@ -67,7 +68,13 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
-
+    public void Die()
+    {
+        gameOver.SetActive(true);
+        Time.timeScale = 0;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
     private void CullDistantEnemies()
     {
         if (player == null)
