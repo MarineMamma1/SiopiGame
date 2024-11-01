@@ -83,15 +83,15 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        // Find all objects tagged "Enemy"
+        
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
         foreach (GameObject enemy in enemies)
         {
-            // Calculate distance between player and enemy
+            
             float distanceToPlayer = Vector3.Distance(player.position, enemy.transform.position);
 
-            // Destroy enemy if it’s farther than the cull distance
+            
             if (distanceToPlayer > cullDistance)
             {
                 Destroy(enemy);
