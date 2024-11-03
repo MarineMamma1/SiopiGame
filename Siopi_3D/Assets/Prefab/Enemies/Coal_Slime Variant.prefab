@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7056540661736524075, guid: 3225fd7053438134aa0b512bb7f7f988, type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7056540661736524075, guid: 3225fd7053438134aa0b512bb7f7f988, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54,12 +54,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7056540661736524080, guid: 3225fd7053438134aa0b512bb7f7f988, type: 3}
       propertyPath: m_Name
-      value: Coal_Slime
+      value: Coal_Slime Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7056540661736524085, guid: 3225fd7053438134aa0b512bb7f7f988, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8f19fca659ed96f42b7273667dac3a15, type: 2}
+    - target: {fileID: 7056540661736524087, guid: 3225fd7053438134aa0b512bb7f7f988, type: 3}
+      propertyPath: m_Size.z
+      value: 1.005584
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056540661736524087, guid: 3225fd7053438134aa0b512bb7f7f988, type: 3}
+      propertyPath: m_Center.x
+      value: -0.00542291
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056540661736524087, guid: 3225fd7053438134aa0b512bb7f7f988, type: 3}
+      propertyPath: m_Center.z
+      value: -0.08693926
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 3225fd7053438134aa0b512bb7f7f988, type: 3}
