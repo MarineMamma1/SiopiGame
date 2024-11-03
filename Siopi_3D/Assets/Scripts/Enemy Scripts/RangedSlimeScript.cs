@@ -84,7 +84,7 @@ public class RangedSlimeScript : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-        
+        //Please stop the machine gun fire rate
         GameObject bulletObj = Instantiate(projectile, spawnPoint.transform.position, spawnPoint.transform.rotation) as GameObject;
         Rigidbody bulletRig = bulletObj.GetComponent<Rigidbody>();
         bulletRig.AddForce(bulletRig.transform.forward * bulletSpeed, ForceMode.Impulse);

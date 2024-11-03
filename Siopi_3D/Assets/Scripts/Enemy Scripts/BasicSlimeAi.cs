@@ -101,7 +101,7 @@ void OnCollisionEnter(Collision collision)
     if (collision.collider.CompareTag("Player"))
     {
         // Check if the player is above the enemy (for the stomp)
-        if (collision.contacts[0].point.y > transform.position.y + 0.2f)  // Adjust 0.5f as needed based on enemy size
+        if (collision.contacts[0].point.y > transform.position.y + 0.5f)  // Adjust 0.5f as needed based on enemy size
         {
             Debug.Log("Lmao get stomped");
 

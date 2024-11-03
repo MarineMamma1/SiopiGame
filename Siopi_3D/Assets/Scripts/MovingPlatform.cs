@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
-    public enum Axis { X, Y, Z } // Choose the axis to move on
-    public Axis moveAxis = Axis.X; // Default to X-axis
-    public float moveDistance = 5f; // Distance to move in each direction
-    public float moveSpeed = 2f; // Speed of the platform
-    public float delayTime = 2f; // Delay time before reversing direction
+    public enum Axis { X, Y, Z } // This allows Axis choosing
+    public Axis moveAxis = Axis.X; 
+    public float moveDistance = 5f;
+    public float moveSpeed = 2f;
+    public float delayTime = 2f; 
 
     private Vector3 startPosition;
     private Vector3 targetPosition;
@@ -17,7 +17,7 @@ public class MovingPlatform : MonoBehaviour
     {
         startPosition = transform.position;
 
-        // Set target position based on chosen axis
+    
         switch (moveAxis)
         {
             case Axis.X:
@@ -31,7 +31,7 @@ public class MovingPlatform : MonoBehaviour
                 break;
         }
 
-        // Start moving the platform
+    
         StartCoroutine(MovePlatform());
     }
 
@@ -46,10 +46,10 @@ public class MovingPlatform : MonoBehaviour
                 yield return null;
             }
 
-            // Toggle direction
+           
             movingToTarget = !movingToTarget;
 
-            // Wait for the delay time
+            
             yield return new WaitForSeconds(delayTime);
         }
     }
