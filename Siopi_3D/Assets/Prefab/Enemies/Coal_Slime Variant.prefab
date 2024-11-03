@@ -61,16 +61,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 8f19fca659ed96f42b7273667dac3a15, type: 2}
     - target: {fileID: 7056540661736524087, guid: 3225fd7053438134aa0b512bb7f7f988, type: 3}
+      propertyPath: m_Size.y
+      value: 0.4694763
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056540661736524087, guid: 3225fd7053438134aa0b512bb7f7f988, type: 3}
       propertyPath: m_Size.z
-      value: 1.005584
+      value: 0.9056301
       objectReference: {fileID: 0}
     - target: {fileID: 7056540661736524087, guid: 3225fd7053438134aa0b512bb7f7f988, type: 3}
       propertyPath: m_Center.x
       value: -0.00542291
       objectReference: {fileID: 0}
     - target: {fileID: 7056540661736524087, guid: 3225fd7053438134aa0b512bb7f7f988, type: 3}
+      propertyPath: m_Center.y
+      value: 0.032247424
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056540661736524087, guid: 3225fd7053438134aa0b512bb7f7f988, type: 3}
       propertyPath: m_Center.z
-      value: -0.08693926
+      value: -0.13691616
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
