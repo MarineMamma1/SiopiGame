@@ -1,14 +1,40 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
+
     public GameObject gameOver, heart0, heart1, heart2, heart3;
     public static int health;
-    public Transform player; // Assign the player's transform in the Inspector
-    public float cullDistance = 100f; // Set the culling distance
-    public float cullCheckInterval = 1f; // Interval between cull checks
+    public Transform player; 
+    public float cullDistance = 100f; 
+    public float cullCheckInterval = 1f; 
+
+    public enum RecordType
+    {
+        RecordA,
+        RecordB,
+        RecordC,
+    }
+
+    private Dictionary<RecordType, bool> collectedRecords = new Dictionary<RecordType, bool>();
+
+    void Awake()
+    {
+        // Implement Singleton pattern
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
@@ -21,6 +47,12 @@ public class GameManager : MonoBehaviour
 
         // Start the periodic culling check
         InvokeRepeating(nameof(CullDistantEnemies), 0f, cullCheckInterval);
+
+        // Initialize collected records
+        foreach (RecordType recordType in System.Enum.GetValues(typeof(RecordType)))
+        {
+            collectedRecords[recordType] = false;
+        }
     }
 
     void Update()
@@ -68,34 +100,46 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
-    public void Die()
+
+    public void PickupRecord(RecordType recordType)
     {
-        gameOver.SetActive(true);
-        Time.timeScale = 0;
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        if (!collectedRecords[recordType])
+        {
+            collectedRecords[recordType] = true;
+            Debug.Log($"Picked up {recordType}");
+        }
+        else
+        {
+            Debug.Log($"{recordType} already collected");
+        }
     }
+
+    public bool HasCollectedRecord(RecordType recordType)
+    {
+        return collectedRecords.ContainsKey(recordType) && collectedRecords[recordType];
+    }
+
     private void CullDistantEnemies()
     {
-        if (player == null)
-        {
-            Debug.LogWarning("Player reference is missing in GameManager.");
-            return;
-        }
-
-        
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-
         foreach (GameObject enemy in enemies)
         {
-            
-            float distanceToPlayer = Vector3.Distance(player.position, enemy.transform.position);
-
-            
-            if (distanceToPlayer > cullDistance)
+            if (Vector3.Distance(player.position, enemy.transform.position) > cullDistance)
             {
                 Destroy(enemy);
             }
         }
+    }
+
+    private void Die()
+    {
+        gameOver.gameObject.SetActive(true);
+        Time.timeScale = 0; // Pause the game
+        Debug.Log("Player died");
+    }
+
+    internal void PickupRecord(Record.RecordType recordType)
+    {
+        throw new NotImplementedException();
     }
 }
