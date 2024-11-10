@@ -7,32 +7,37 @@ public class RecordObj : MonoBehaviour
     private bool selectable;
     public bool returner;
     public Vector3 returnLocation;
+
+    // Add a field to specify which record type this is
+    public GameManager.RecordType recordType;
+
     void LateUpdate()
     {
-        if(selectable)
+        if (selectable)
         {
-            if(Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                PlayerManager.Instance.RecordAmount++;
+                GameManager.Instance.AddRecord(recordType);
                 transform.GetChild(0).gameObject.SetActive(false);
-                if (returner == true)
+                if (returner)
                 {
                     PlayerManager.Instance.transform.position = returnLocation;
                 }
             }
         }
-        
     }
-    public void OnTriggerEnter(Collider other)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             selectable = true;
         }
     }
-    public void OnTriggerExit(Collider other)
+
+    private void OnTriggerExit(Collider other)
     {
-        if(other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             selectable = false;
         }

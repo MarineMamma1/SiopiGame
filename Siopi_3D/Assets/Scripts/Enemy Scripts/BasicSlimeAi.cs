@@ -15,6 +15,7 @@ public class BasicSlimeAi : MonoBehaviour
     public float stompHeightThreshold = 0.5f;
 
     private Collider enemyCollider;
+    private Rigidbody slimeRigidBody;
 
     //Patroling
     public Vector3 walkPoint;
@@ -96,29 +97,48 @@ private void KamikazeAttack()
     Destroy(gameObject);    
 }
 
-void OnCollisionEnter(Collision collision)
+private void OnTriggerEnter(Collider other)
 {
-    if (collision.collider.CompareTag("Player"))
+    if (other.CompareTag("Player"))
     {
-        // Check if the player is above the enemy (for the stomp)
-        if (collision.contacts[0].point.y > transform.position.y + 0.5f)  // Adjust 0.5f as needed based on enemy size
+        Rigidbody playerRigidbody = other.GetComponent<Rigidbody>();
+        
+        if (playerRigidbody != null && playerRigidbody.velocity.y < 0)
         {
             Debug.Log("Lmao get stomped");
+            playerRigidbody.velocity = new Vector3(playerRigidbody.velocity.x, stompForce, playerRigidbody.velocity.z);
 
-            Rigidbody playerRb = collision.collider.GetComponent<Rigidbody>();
-            if (playerRb != null)
-            {
-                playerRb.AddForce(Vector3.up * 5f, ForceMode.Impulse);
-            }
+        }
 
-            Destroy(gameObject);
-        }
-        else
-        {
-            // God I wish I could Kamikaze myself rn
-            KamikazeAttack();
-        }
+        Destroy(gameObject);
     }
+    //else
+        //{
+            // God I wish I could Kamikaze myself rn
+          //  KamikazeAttack();
+        //}
 }
+//void OnCollisionEnter(Collision collision)
+//{
+    //if (collision.collider.CompareTag("Player"))
+    //{
+        // Check if the player is above the enemy (for the stomp)
+        //if (collision.contacts[0].point.y > transform.position.y + 0.5f) 
+        //{
+           // Debug.Log("Lmao get stomped");
 
-}
+           // Rigidbody playerRb = collision.collider.GetComponent<Rigidbody>();
+           // if (playerRb != null)
+           // {
+           //     playerRb.AddForce(Vector3.up * 5f, ForceMode.Impulse);
+           // }
+
+           // Destroy(gameObject);
+       // }
+        //else
+        //{
+            // God I wish I could Kamikaze myself rn
+         //   KamikazeAttack();
+       // }
+    }
+

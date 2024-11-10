@@ -79,9 +79,7 @@
      <Compile Include="Assets\PlatformStick.cs" />
      <Compile Include="Assets\Scripts\CameraManager.cs" />
      <Compile Include="Assets\Scripts\InputManager.cs" />
-     <Compile Include="Assets\Scripts\RecordPickup\RecordType.cs" />
-     <Compile Include="Assets\Scripts\PlayerInteraction.cs" />
-     <Compile Include="Assets\Scripts\RecordPickup\Record.cs" />
+     <Compile Include="Assets\Scripts\BouncePad.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
