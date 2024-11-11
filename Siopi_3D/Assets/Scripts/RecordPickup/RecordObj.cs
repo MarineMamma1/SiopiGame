@@ -8,7 +8,7 @@ public class RecordObj : MonoBehaviour
     public bool returner;
     public Vector3 returnLocation;
 
-    // Add a field to specify which record type this is
+    // I learned that this allows it to realise which record is which! 
     public GameManager.RecordType recordType;
 
     void LateUpdate()
@@ -17,6 +17,7 @@ public class RecordObj : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                // I think this is how Instance works
                 GameManager.Instance.AddRecord(recordType);
                 transform.GetChild(0).gameObject.SetActive(false);
                 if (returner)
