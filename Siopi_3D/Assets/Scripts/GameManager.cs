@@ -60,12 +60,12 @@ public class GameManager : MonoBehaviour
         if (health <= 0)
         {
             health = 0;
-            Die(); // The jokes write themselves
+            Die();
         }
     }
 
     private void GainHealth(int amount)
-    {
+    {  
         health += amount;
         health = Mathf.Min(health, 4);
     }
@@ -161,5 +161,18 @@ public class GameManager : MonoBehaviour
     public bool HasRecord(RecordType recordType)
     {
         return collectedRecords.ContainsKey(recordType) && collectedRecords[recordType];
+    }
+
+    public void UseRecord(RecordType recordType)
+    {
+        if (collectedRecords.ContainsKey(recordType) && collectedRecords[recordType])
+        {
+            collectedRecords[recordType] = false;
+            Debug.Log($"{recordType} has been used.");
+        }
+        else
+        {
+            Debug.Log($"{recordType} is not available to use.");
+        }
     }
 }
