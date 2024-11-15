@@ -7,23 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Platform_Mat
-    second: {fileID: 2100000, guid: 54f55e75cfe01284299a90c1880fe0a5, type: 2}
+      name: Leaf_Platform_mat
+    second: {fileID: 2100000, guid: 6bf7b7751e2fb38418a2e90f46a88bcc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Platform_PlatformBase_Mat
-    second: {fileID: 2100000, guid: 28f25fa3113dbf0478d9e64219dbcf58, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Platform_PlatformRIm_Mat
-    second: {fileID: 2100000, guid: e23e1ad5aeb60e143b0b07bae31c42ec, type: 2}
+      name: standardSurface1
+    second: {fileID: 2100000, guid: 3afe22ce242b5df42bec6837a94ec589, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Platform_Mat
-    second: {fileID: 2800000, guid: 16364f85aee318944b151eb6d4728ee4, type: 3}
+    second: {fileID: 2800000, guid: b81e36beb0fe0264e9022f9d922a5044, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

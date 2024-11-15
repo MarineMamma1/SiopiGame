@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 72afdfd9669f4c94f8fd079d6d7e4e02
+guid: 70ce28123a407f64d864db071037e6c9
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
@@ -7,23 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: SmallGreenhouse_GreenhouseFloor_Mat
-    second: {fileID: 2100000, guid: 72d8b28e93a64ca4ab0425b961178cb6, type: 2}
+      name: SmallGreenhouse2_SmallGreenhouse_GreenhouseFloor_Mat
+    second: {fileID: 2100000, guid: 3dfb81ae36ab23948bfa514ce0f2e4dc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: SmallGreenhouse_GreenhouseGlass_Mat
-    second: {fileID: 2100000, guid: f3c04521cb1c3fd4db4ecd02996e658f, type: 2}
+      name: SmallGreenhouse2_SmallGreenhouse_GreenhouseGlass_Mat
+    second: {fileID: 2100000, guid: 3e33314b508deb44e8fb7576b0853417, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: SmallGreenhouse_GreenhouseGold_Mat
-    second: {fileID: 2100000, guid: a35cc5c41696ccc4a9ed1e52364dcc4a, type: 2}
+      name: SmallGreenhouse2_SmallGreenhouse_GreenhouseGold_Mat
+    second: {fileID: 2100000, guid: 114ff29de47e8984ba73aa77b13fbb62, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: SmallGreenhouse_GreenhouseKeyhole_Mat
-    second: {fileID: 2100000, guid: 3bf24738ecf1bcd49adef28441e49ec9, type: 2}
+      name: SmallGreenhouse2_SmallGreenhouse_GreenhouseKeyhole_Mat
+    second: {fileID: 2100000, guid: 589422b50a1287c41bdc441ca76a38de, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
