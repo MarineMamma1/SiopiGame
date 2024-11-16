@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7510913051060471465}
   - component: {fileID: 5753604615440364131}
   - component: {fileID: 8833040983569080532}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lillypad
-  m_TagString: Untagged
+  m_TagString: IsGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

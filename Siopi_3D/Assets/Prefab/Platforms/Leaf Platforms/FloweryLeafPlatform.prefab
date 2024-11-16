@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6578565574698927680}
   - component: {fileID: 8744766835151111153}
   - component: {fileID: 4438101992692337963}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Flowery_Platform:Flowery_Platform1:Flowery_Platform:Flowery_Platform:LooseLeaf_Two_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4003914009148440135}
   - component: {fileID: 4003914009148440132}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LeafPlatforms_Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,9 +138,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3466219128651102188}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FloweryLeafPlatform
-  m_TagString: Untagged
+  m_TagString: IsGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 52809660979016647}
   - component: {fileID: 7313262279696484588}
   - component: {fileID: 8069457968785006638}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Flowery_Platform:Flowery_Platform1:polySurface3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 6713311818169773556}
   - component: {fileID: 619764293170761351}
   - component: {fileID: 4588387698387454286}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Flowery_Platform:Flowery_Platform1:Flowery_Platform:Leaf_GRP1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

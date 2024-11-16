@@ -32,7 +32,7 @@ public class Door : MonoBehaviour
             if(other.tag == "Player" && keys.KeyAmount >= 3)
             {
                 keys.KeyAmount -= 1;
-                anim.SetTrigger("OpenDoor");
+                anim.SetTrigger("Open");
             }
             
         }
