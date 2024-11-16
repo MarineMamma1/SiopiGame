@@ -7,23 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: TreeFoiliage_Mat
-    second: {fileID: 2100000, guid: 5163c5eb69f272647a41451902714fc5, type: 2}
+      name: Tree_1_TreeFoiliage_Mat
+    second: {fileID: 2100000, guid: a9a821b870845f44bb6b78ee69ffe7ce, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: TreeTrunk_Mat
-    second: {fileID: 2100000, guid: 66d19d5361b8b3040a4e29d57ad8ce2e, type: 2}
+      name: Tree_1_TreeTrunk_Mat
+    second: {fileID: 2100000, guid: dbca7a250a5f3a24a858f7152d63ac45, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TreeLeaves_Mat
-    second: {fileID: 2800000, guid: a665a2590c80c3642a0b509ff80362f7, type: 3}
+    second: {fileID: 2800000, guid: c49f4d4df6d68834c8fd88bb6d2583a7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TreeTrunk_Mat
-    second: {fileID: 2800000, guid: a5c81dd2af8290c41a97882aeaec82fa, type: 3}
+    second: {fileID: 2800000, guid: 548f8f7742e1bcd40a5145d2e1d02049, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
