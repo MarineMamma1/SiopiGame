@@ -92,6 +92,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7659700015989795160}
+  - component: {fileID: 4417845963475211996}
+  - component: {fileID: 742653067528605024}
+  - component: {fileID: 8069903322512943102}
   m_Layer: 0
   m_Name: Pipe Pile
   m_TagString: Untagged
@@ -114,8 +117,47 @@ Transform:
   - {fileID: 1874974627857373078}
   - {fileID: 560614861270551624}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4417845963475211996
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6991671538148733922}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 113.72496, y: 18.300003, z: 49.020004}
+  m_Center: {x: -0.15730262, y: 7.5310946, z: 0.055122375}
+--- !u!65 &742653067528605024
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6991671538148733922}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 113.72496, y: 13.108784, z: 32.85}
+  m_Center: {x: -0.15730262, y: 23.24439, z: 0.055122375}
+--- !u!65 &8069903322512943102
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6991671538148733922}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 113.72496, y: 14.314586, z: 15.9}
+  m_Center: {x: -0.15730262, y: 36.802902, z: 0.055122375}
 --- !u!1 &8438765345616806048
 GameObject:
   m_ObjectHideFlags: 0
