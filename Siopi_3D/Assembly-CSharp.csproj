@@ -47,6 +47,7 @@
      <Compile Include="Assets\Scripts\Menu scripts\DeadMenu.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\Stomp.cs" />
      <Compile Include="Assets\PlayerControls.cs" />
+     <Compile Include="Assets\Scripts\ModelLock.cs" />
      <Compile Include="Assets\Scripts\PatrolScript.cs" />
      <Compile Include="Assets\SlimeSpawner.cs" />
      <Compile Include="Assets\Scripts\RecordPickup\RecordGate.cs" />
@@ -80,7 +81,6 @@
      <Compile Include="Assets\Scripts\CameraManager.cs" />
      <Compile Include="Assets\Scripts\InputManager.cs" />
      <Compile Include="Assets\Scripts\BouncePad.cs" />
-     <Compile Include="Assets\Scripts\ModelLock.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
