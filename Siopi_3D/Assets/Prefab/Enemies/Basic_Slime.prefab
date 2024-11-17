@@ -205,8 +205,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   health: 3
-  stompForce: 10
-  stompHeightThreshold: 5
+  stompForce: 6
+  stompHeightThreshold: 1
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 3.19
   sightRange: 20

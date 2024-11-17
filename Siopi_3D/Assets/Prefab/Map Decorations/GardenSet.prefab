@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 613273277442213481}
   - component: {fileID: 204806733075805151}
   - component: {fileID: 8182294382720161624}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GardenTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 8383480034692280349}
   - component: {fileID: 8182294382532522146}
   - component: {fileID: 8182294382532522149}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HeartChair1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 7790550674557624984}
   - component: {fileID: 8182294382950550405}
   - component: {fileID: 8182294382950550404}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HeartChair3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,7 +346,7 @@ GameObject:
   - component: {fileID: 6158726249345932350}
   - component: {fileID: 8182294383020661528}
   - component: {fileID: 8182294383020661531}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HeartChair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -463,7 +463,7 @@ GameObject:
   - component: {fileID: 4732504620728496270}
   - component: {fileID: 8182294383865372956}
   - component: {fileID: 8182294383865372959}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HeartChair2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -576,7 +576,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8505012844146219485}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GardenSet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

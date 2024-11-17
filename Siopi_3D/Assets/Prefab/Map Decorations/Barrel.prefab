@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6003505416106556079}
   - component: {fileID: 1292134726708837103}
   - component: {fileID: 893000524407976483}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 7066201074512566362}
   - component: {fileID: 8789089292885193082}
   - component: {fileID: 5416572769881907695}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Metal_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 8422952229230270541}
   - component: {fileID: 7267697720902900327}
   - component: {fileID: 8129018211765201258}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Nubs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6033782699294383937}
   - component: {fileID: 945008994874979007}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -310,7 +310,7 @@ GameObject:
   - component: {fileID: 863673018064847440}
   - component: {fileID: 8371628121954687397}
   - component: {fileID: 4634996102859275090}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Metal_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

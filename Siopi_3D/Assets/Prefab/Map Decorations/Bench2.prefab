@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3741758666907203516}
   - component: {fileID: 1585284076800319094}
   - component: {fileID: 1354460188344675460}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bench2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 5398463976075262959}
   - component: {fileID: 311421856521059803}
   - component: {fileID: 4535009598047993601}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WoodSlats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 1425834283087539833}
   - component: {fileID: 2153530854307065792}
   - component: {fileID: 663174789906477395}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: metalParts
   m_TagString: Untagged
   m_Icon: {fileID: 0}

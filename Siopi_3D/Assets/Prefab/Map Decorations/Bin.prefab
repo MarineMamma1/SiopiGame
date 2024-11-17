@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6396667980499306180}
   - component: {fileID: 1108689484663703265}
   - component: {fileID: 8184879245014209382}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bin_Decorations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 542046392668062583}
   - component: {fileID: 1843622383158491134}
   - component: {fileID: 1695933070785990384}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bin_faces
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5771664850331331620}
   - component: {fileID: 4931746134385049755}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 7456572048606844125}
   - component: {fileID: 512437335365140824}
   - component: {fileID: 2820766114862937899}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bin_Metal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 2022870194731932218}
   - component: {fileID: 6866992513209816431}
   - component: {fileID: 7860990454401791296}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bin_Inside
   m_TagString: Untagged
   m_Icon: {fileID: 0}

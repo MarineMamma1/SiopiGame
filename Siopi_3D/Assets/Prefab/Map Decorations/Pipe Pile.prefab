@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 560614861270551624}
   - component: {fileID: 4889404023445293327}
   - component: {fileID: 6722830689663757191}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 4417845963475211996}
   - component: {fileID: 742653067528605024}
   - component: {fileID: 8069903322512943102}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pipe Pile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 1874974627857373078}
   - component: {fileID: 5993678221906752569}
   - component: {fileID: 4850265194591252504}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
