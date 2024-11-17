@@ -5,10 +5,15 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lillypad_Mat
+    second: {fileID: 2100000, guid: f284e3cf5827b4c498edb72aacb669df, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Lilly_Mat
-    second: {fileID: 2800000, guid: 5fac8c3b8a34fb14fab9b092add76bd0, type: 3}
+    second: {fileID: 2800000, guid: 76009b58c4f7e9e4bb27d4f656b08c2c, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
