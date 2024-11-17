@@ -22,7 +22,7 @@ public class GameOverTrigger : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Time.timeScale = 1;
+            Time.timeScale = 0;
             WinPanel.SetActive (true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;

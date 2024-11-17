@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1467136094262738416}
   - component: {fileID: 3726913172536281402}
   - component: {fileID: 1782811212817238356}
+  - component: {fileID: 373860848337839716}
   m_Layer: 0
   m_Name: FloweryBush
   m_TagString: Untagged
@@ -32,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1467136094262738416
 MeshFilter:
@@ -98,3 +99,19 @@ CapsuleCollider:
   m_Height: 58.01631
   m_Direction: 1
   m_Center: {x: -5.2, y: -13.06, z: -0.06}
+--- !u!208 &373860848337839716
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2934196007276144879}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 52.6, y: 29.008001, z: 52.6}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -1.3260001, y: -11.1, z: 2.259}
+  m_TimeToStationary: 0.5
