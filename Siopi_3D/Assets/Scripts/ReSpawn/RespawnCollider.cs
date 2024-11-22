@@ -31,6 +31,10 @@ public class RespawnCollider : MonoBehaviour
         {
             charPos = other.transform.position;
         }
+        else if (checking == true && player.grounded == false)
+        {
+            charPos = new Vector3(other.transform.position.x, transform.position.y, other.transform.position.z);
+        }
     }
     private void OnTriggerExit(Collider other) 
     {
