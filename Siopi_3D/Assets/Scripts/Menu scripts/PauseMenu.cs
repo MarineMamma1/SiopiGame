@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
-    public Image InstructionsImage;
+    public GameObject InstructionsPanel;
+    public RespawnManager manager;
 
     public void MenuButton()
     {
@@ -15,10 +16,10 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("Main Menu");
     }
 
-
-    public void InstructionsButton()
+    public void InstructionButton()
     {
-        InstructionsImage.SetActive (true);
+        InstructionsPanel.SetActive (true);
+        gameObject.SetActive (false);
     }
 
 
@@ -37,8 +38,17 @@ public class PauseMenu : MonoBehaviour
             else
             {
                pauseMenu.SetActive (false);
+               InstructionsPanel.SetActive (false);
                Time.timeScale = 1;
             }
         }
+    }
+    public void Restart()
+    {
+        PlayerManager.Instance.transform.position = manager.activeCollider.charPos;
+        Time.timeScale = 1;
+        gameObject.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }
