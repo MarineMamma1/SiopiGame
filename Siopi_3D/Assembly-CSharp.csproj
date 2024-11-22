@@ -37,7 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Door.cs" />
-     <Compile Include="Assets\Scripts\Menu Scripts\Instructions Scripts\InstructionsScroller.cs" />
+     <Compile Include="Assets\Scripts\Menu Scripts\InstructionsScroller.cs" />
      <Compile Include="Assets\Scripts\Patrol Script.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\RangedSlimeScript.cs" />
      <Compile Include="Assets\Scripts\PlayerManager.cs" />

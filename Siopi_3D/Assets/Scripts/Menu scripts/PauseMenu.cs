@@ -38,8 +38,10 @@ public class PauseMenu : MonoBehaviour
             else
             {
                pauseMenu.SetActive (false);
-               InstructionsPanel.SetActive (false);
                Time.timeScale = 1;
+               Cursor.lockState = CursorLockMode.Locked;
+               Cursor.visible = false;
+               InstructionsPanel.SetActive (false);
             }
         }
     }
