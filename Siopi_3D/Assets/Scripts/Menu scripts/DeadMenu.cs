@@ -6,12 +6,15 @@ using UnityEngine.SceneManagement;
 public class DeadMenu : MonoBehaviour
 {
     public RespawnManager manager;
+        
+        
         public void MainMenu()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("Main Menu");
     }
-            public void Restart()
+
+        public void Restart()
     {
         PlayerManager.Instance.transform.position = manager.activeCollider.charPos;
         Time.timeScale = 1;
